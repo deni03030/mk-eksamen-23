@@ -5,3 +5,4 @@ bower_components
 dist
 yarn.lock
 *.swp
+package-lock.json
