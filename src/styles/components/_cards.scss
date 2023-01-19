@@ -1,0 +1,59 @@
+.cards-side__all-cards {
+    display: flex;
+    margin-right: 180px;
+
+
+    .cards-side__card {
+        width: 400px;
+        height: 400px;
+        margin-left: -130px;
+        margin-right: 20px;
+        padding: 65px;
+        background-color: $theme-color-secondary;
+        box-shadow: $box-shadow;
+        text-align: start;
+
+        .card__image {
+            height: 72px;
+        }
+
+        .card__title {
+            margin-top: 15px;
+            font-size: $theme-font-small-title;
+            font-weight: 700;
+        }
+
+        .card__text {
+            margin-top: 15px;
+            line-height: $line-height;
+            text-align: left;
+            font-size: $theme-font-base;
+        }
+
+        .card__information-btn {
+            display: block;
+            width: 70%;
+            margin-left: -5px;
+            border: $none-border;
+            background-image: $background-image;
+            background-size: $background-size;
+            background-color: $theme-color-secondary;
+            background-repeat: $background-no-repeat;
+            background-position-x: $background-position-x;
+            text-align: start;
+            font-weight: 700;
+        }
+
+        .card__information-btn:hover {
+            background-image: $background-image-hover;
+            background-size: $background-size;
+            background-repeat: $background-no-repeat;
+        }
+
+        .card__information-btn:active {
+            color: $theme-color-primary;
+            background-image: $background-image-hover;
+            background-repeat: $background-no-repeat;
+        }
+    }
+}
