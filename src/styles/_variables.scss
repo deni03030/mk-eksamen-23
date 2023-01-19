@@ -1,12 +1,33 @@
-// theme colors
+// colors
 $theme-color-primary: #f3581e;
 $theme-color-secondary: #ffff;
+$link-color-black: rgb(0, 0, 0);
+$section-color-grey: #f5f5f5;
 
 // typography
 $theme-font-base: 16px;
 $theme-font-title: 40px;
+$line-height: 24px;
+$theme-font-small-title: 18px;
 
-$link-color-black: rgb(0, 0, 0);
+//menu-style
+$menu-background-image: url('../../assets/images/arrow-nav.svg');
+$menu-background-hover: url('../../assets/images/arrow-dropdown.svg');
+$menu-background-size: 10px 15px;
+$menu-background-position: right;
+$menu-background-position-x: 100%;
 
+//Background styles
+$background-image: url('../../assets/images/arrow-small.svg');
+$background-image-hover: url('../../assets/images/arrow-small-orange.svg');
+$background-color: none;
+$background-no-repeat: no-repeat;
+$background-size: 20px 28px;
+$background-position: right;
+$background-position-x: 85%;
 
+//box-styles
+$box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+//Border styles
+$none-border: none;

@@ -1,9 +1,26 @@
 * {
     box-sizing: border-box;
 }
-.container{
+
+.container {
     max-width: 1360px;
     width: 100%;
     margin: 0 auto;
     margin-top: 80px;
+}
+
+a {
+    color: $link-color-black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: $theme-color-primary
+}
+
+li {
+    list-style: none;
 }
