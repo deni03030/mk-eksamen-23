@@ -1,0 +1,62 @@
+.costumer-service {
+    margin-bottom: 20px;
+}
+
+.service-border {
+    padding-left: 15px;
+    border-left: 4px solid $theme-color-primary;
+}
+
+.service-title {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.service-information {
+    display: flex;
+    flex-direction: wrap;
+}
+
+.information-number {
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+}
+
+.information-email {
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    font-size: $theme-font-base;
+}
+
+.information-link {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    height: 20px;
+}
+
+.link {
+    margin-right: -30px;
+}
+
+.information-divider {
+    width: 2px;
+    height: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: $link-color-black;
+}
+
+.image {
+    height: 18px;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+
+.location-image {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}

@@ -3,12 +3,12 @@ $theme-color-primary: #f3581e;
 $theme-color-secondary: #ffff;
 $link-color-black: rgb(0, 0, 0);
 $section-color-grey: #f5f5f5;
-
+$footer-color-grey: #e3e3e3;
 // typography
 $theme-font-base: 16px;
 $theme-font-title: 40px;
 $line-height: 24px;
-$theme-font-small-title: 18px;
+$theme-font-small-title: 20px;
 
 //menu-style
 $menu-background-image: url('../../assets/images/arrow-nav.svg');
@@ -27,7 +27,13 @@ $background-position: right;
 $background-position-x: 85%;
 
 //box-styles
-$box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+$box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
 
 //Border styles
 $none-border: none;
+$none-radius: 10px;
+
+//Chekbox styles
+$webkit: rotate(45deg);
+$transform: rotate(45deg);
+$second-transform: rotate(45deg);
