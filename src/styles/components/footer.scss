@@ -1,0 +1,127 @@
+.footer-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__left-side {
+    width: 1135px;
+    height: 580px;
+    background-color: $theme-color-primary;
+}
+
+.footer__right-side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 1834px;
+    height: 506px;
+    margin-top: 74px;
+    margin-left: 68px;
+    background-color: $section-color-grey;
+}
+
+.grid-container {
+    display: grid;
+    gap: 60px;
+
+    .right-side__service {
+        grid-column: 1/ span 1;
+        grid-row: 2;
+    }
+
+    .right-side__information {
+        grid-column: 2/ span 2;
+        grid-row: 2;
+        padding-left: 100px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        border-left: 1px solid $footer-color-grey;
+    }
+
+    .right-side__bulletin {
+        grid-column: 4/ span 4;
+        grid-row: 2;
+        padding-left: 100px;
+        padding-top: 10px;
+        border-left: 1px solid $footer-color-grey;
+    }
+
+    .footer__bottom {
+        grid-column: 1 / span 8;
+        grid-row: 3;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 10px;
+        border-top: 1px solid $footer-color-grey;
+    }
+
+}
+
+.information__links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-titles {
+    font-size: $theme-font-small-title;
+    font-weight: 500;
+}
+
+.bulletin-form {
+    display: grid;
+    grid-template-columns: 150px 150px;
+
+    .bulletin-form::after {
+        content: "";
+        display: table;
+    }
+
+    .bulletin__email {
+        padding-right: 120px;
+    }
+
+    .bulletin__submit {
+        height: 40px;
+        margin-top: 20px;
+        padding: 5px 20px;
+        border: solid 2px $theme-color-primary;
+        background-color: $section-color-grey;
+        text-decoration: none;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+.subscribe_email {
+    padding-right: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: $box-shadow;
+    border: $none-border;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+    appearance: none;
+    background-color: $theme-color-secondary;
+    border: $none-border;
+    font-style: inherit;
+    color: $theme-color-secondary;
+    box-shadow: $box-shadow;
+    transform: translateY(-0.075em);
+}
+
+.bulletin__checkbox {
+    display: flex;
+    margin-right: 20px;
+}
+
+.checkbox-text {
+    margin-left: 5px;
+}

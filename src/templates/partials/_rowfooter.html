@@ -1,0 +1,29 @@
+<div class="costumer-service">
+    <div class="service-border">
+        <p class="service-title">{{title}}</p>
+        <div class="service-information">
+            {{#if number}}
+            <div class="information-number">
+                <img src="../../assets/images/phone-call.svg" class="image" alt="">
+                <p> {{number}} </p>
+            </div>
+            {{/if}}
+
+            {{#if email}}
+            <span class="information-divider"></span>
+            <div class="information-email">
+                <img src="../../assets/images/Mail_footer.svg" class="image" alt="">
+                <p> {{email}} </p>
+            </div>
+            {{/if}}
+
+            {{#if link}}
+            <div class="information-link">
+                <img src="../../assets/images/location.svg" alt="" class="location-image">
+                <a href={{link}} class="link-location"> {{text}} </a>
+            </div>
+            {{/if}}
+
+        </div>
+    </div>
+</div>

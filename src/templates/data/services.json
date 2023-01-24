@@ -1,0 +1,19 @@
+{
+    "data": [
+    {
+        "title": "„ЧЕЗ Разпределение Бълга­рия“ АД",
+        "number": "0700 10 010",
+        "email": "klienti@cez-rp.bg"
+    },
+    {
+        "title": "„ЧЕЗ Електро Бълга­рия“ АД",
+        "number": "0700 10 010",
+        "email": "klienti@cezelectro.bg"
+    }, 
+    { 
+        "title": "Центрове за обслужване на клиенти",
+        "text": "Намери център близо до теб",
+        "link": "https://www.google.com/maps"
+    }
+    ]
+}
