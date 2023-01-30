@@ -1,0 +1,74 @@
+.career {
+    position: relative;
+    max-width: 1920px;
+    width: 100%;
+    height: 585px;
+    margin-bottom: 350px;
+    margin-top: 550px;
+}
+
+.career__background {
+    position: absolute;
+}
+
+.career__orange-left {
+    width: 1900px;
+    height: 485px;
+    left: 0;
+    background-color: $theme-color-primary;
+}
+
+.career__grey-right {
+    max-width: 1702px;
+    height: 743px;
+    position: absolute;
+    right: 0;
+    margin-top: -350px;
+    background-color: $section-color-grey;
+}
+
+.grey-right__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 60px;
+    padding-left: 25px;
+}
+
+.information-underline {
+    margin-top: 10px;
+    margin-left: 2px;
+    width: 40px;
+    border-top: 3.5px solid $theme-color-primary;
+}
+
+.information-text {
+    width: 649.3px;
+    height: 59px;
+}
+
+.information-button {
+    height: 40px;
+    margin-top: 5px;
+    border: solid 2px $theme-color-primary;
+    background-color: $theme-color-secondary;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.career__border {
+    border-top: 1px solid $footer-color-grey;
+    width: 82.5%;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+}
+
+.careercards__cards-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.career__information {
+    margin-left: 15px;
+}

@@ -1,0 +1,39 @@
+.numbers-information {
+    display: flex;
+    flex-direction: column;
+    height: 135px;
+    border-right: 2px solid $footer-color-grey;
+    margin-bottom: 40px;
+
+    &:last-child {
+        border-right: $none-border;
+    }
+}
+
+.career__numbers {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 60px;
+
+}
+
+.numbers-counter {
+    font-size: $career-font-numbers;
+    font-weight: 700;
+    color: $theme-color-primary;
+}
+
+.container-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.numbers-text {
+    font-size: $theme-font-base;
+    font-weight: normal;
+    color: $link-color-black;
+    width: 260px;
+    margin-right: 40px;
+
+}

@@ -1,6 +1,7 @@
 import $ from './libs/jquery.min';
-import example from './modules/example';
+import careerNumbers from './modules/career';
 
 $(document).ready(() => {
-    console.log($('body'));
+    careerNumbers();
 });
+

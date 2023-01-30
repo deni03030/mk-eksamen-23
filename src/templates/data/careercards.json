@@ -1,0 +1,12 @@
+{
+    "cards": [
+        {
+            "image": "../../assets/images/graduated.jpeg",
+            "text": "Кариерно развитие за завършили"
+        },
+        {
+            "image": "../../assets/images/university.jpeg",
+            "text": "Стажантски програми за студенти"
+        }
+    ]
+}

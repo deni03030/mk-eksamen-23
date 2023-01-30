@@ -9,6 +9,7 @@ $theme-font-base: 16px;
 $theme-font-title: 40px;
 $line-height: 24px;
 $theme-font-small-title: 20px;
+$career-font-numbers: 50px;
 
 //menu-style
 $menu-background-image: url('../../assets/images/arrow-nav.svg');
@@ -20,6 +21,7 @@ $menu-background-position-x: 100%;
 //Background styles
 $background-image: url('../../assets/images/arrow-small.svg');
 $background-image-hover: url('../../assets/images/arrow-small-orange.svg');
+$career-background: linear-gradient(to top, #393939, rgba(122, 122, 122, 0.29));
 $background-color: none;
 $background-no-repeat: no-repeat;
 $background-size: 20px 28px;
