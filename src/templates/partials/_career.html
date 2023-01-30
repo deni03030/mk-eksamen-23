@@ -1,0 +1,28 @@
+<section class="career">
+    <div class="career__orange-left career__background"></div>
+
+    <div class="career__grey-right career__background container">
+
+        <div class="grey-right__content">
+            <div class="career__information">
+                <h2 class="information-title">Кариерно развитие в ЧЕЗ</h2>
+                <hr class="information-underline">
+                <p class="information-text">Има работа и има работата на живота Ви. Втората е тази, върху която
+                    оставяте
+                    отпечатъците си, която Ви вдъхновява и Ви изпълва с енергия.</p>
+                <button class="information-button">Прочети повече</button>
+            </div>
+            <span class="career__border"></span>
+            <div class="career__numbers">
+                {{#each career.counter}}
+                {{> _careernumbers }}
+                {{/each}}
+            </div>
+            <div class="careercards__cards-buttons">
+                {{#each careercards.cards}}
+                {{> _careercards }}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</section>
