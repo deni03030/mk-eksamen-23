@@ -1,121 +1,66 @@
-<header>
-    <div class="main-navigation">
-        <nav class="navbar container">
-            <div class="navbar__logo">
-                <img src="../../assets/images/imgpsh_fullsize_anim.png" class="logo" />
-            </div>
-            <div class="menu">
-                <ul class="menu__first-level">
-                    <li class="menu__list-item dropdown ">
-                        <a href="" class="list-item__link">
-                            За нас
-                        </a>
-                        <ul class="dropdown-content menu__second-level">
-                            <li><a href="" class="second-level__item-link">Профил и управление</a></li>
-                            <li><a href="">Дружества</a></li>
-
-                            <li class="second-level__list-item second-level__dropdown">
-                                <a href="" class="link__third-level">
-                                    Кариери
-                                    <img src="../../assets/images/arrow-nav.svg" class="link-arrow" alt="">
-                                    <img src="../../assets/images/arrow-dropdown.svg" class="link-arrow--orange" alt="">
-                                </a>
-                                <ul class="menu__third-level">
-                                    <li> <a href="">Енергия за бъдещето</a> </li>
-                                    <li> <a href="">Кандидатствайте за работа при нас</a> </li>
-                                    <li> <a href=""> Защо Електрохолд</a> </li>
-                                    <li> <a href="">HR новини</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="">Мисия, визия и ценности</a></li>
-                            <li><a href="">Устойчиво равитие</a></li>
-                            <li class="second-level__list-item second-level__dropdown">
-                                <a href="" class="link__third-level">
-                                    Етични принципи
-                                    <img src="../../assets/images/arrow-nav.svg" class="link-arrow" alt="">
-                                    <img src="../../assets/images/arrow-dropdown.svg" class="link-arrow--orange" alt="">
-                                </a>
-                                <ul class="menu__third-level">
-                                    <li> <a href="">Етичен кодекс</a> </li>
-                                    <li> <a href="">Енергиен омбусман</a> </li>
-                                    <li> <a href="">Потребителски съвет</a> </li>
-                                    <li> <a href="">Гореща линия по етични въпроси</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="menu__list-item dropdown">
-                        <a href="" class="list-item__link">
-                            Дружества
-                        </a>
-                        <ul class="menu__second-level">
-                            <li><a href="">Вътрешен линк 567</a></li>
-                            <li><a href="">Вътрешен линк 567</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="menu__list-item">
-                        <a href="" class="list-item__link">Новини</a>
-                    </li>
-
-                    <li class="menu__list-item dropdown">
-                        <a href="" class="list-item__link">
-                            Социална отговорност
-                        </a>
-                        <ul class="menu__second-level">
-                            <li><a href="">Опция 1</a></li>
-                            <li><a href="">Опция 2</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu__list-item dropdown ">
-                        <a href="" class="list-item__link">
-                            Медия център
-                        </a>
-                        <ul class="dropdown-content menu__second-level">
-                            <li><a href="" class="second-level__item-link">Профил и управление</a></li>
-                            <li><a href="">Дружества</a></li>
-
-                            <li class="second-level__list-item second-level__dropdown">
-                                <a href="" class="link__third-level">
-                                    Кариери
-                                    <img src="../../assets/images/arrow-nav.svg" class="link-arrow" alt="">
-                                    <img src="../../assets/images/arrow-dropdown.svg" class="link-arrow--orange" alt="">
-                                </a>
-                                <ul class="menu__third-level">
-                                    <li> <a href="">Опция 1</a> </li>
-                                    <li> <a href="">Опция 2</a> </li>
-                                    <li> <a href="">Опция 3</a> </li>
-                                    <li> <a href="">Опция 4</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="">Мисия, визия и ценности</a></li>
-                            <li><a href="">Устойчиво равитие</a></li>
-                            <li><a href="">Етични принципи</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu__list-item">
-                        <a href="" class="list-item__link">Контакти</a>
-                    </li>
-
-                    <div class="icons-container">
-                        <li class="menu__list-item icon ">
-                            <img src="../../assets/images/loupe.svg" alt="" class="icon-search" />
-                        </li>
-                        <li class="menu__list-item">
-                            <img src="../../assets/images/noun_Language.svg" alt="" class="icon-languages" />
-                        </li>
-                        <li class="menu-list_item dropdown ">
-                            <a class="menu__list-item" href="">
-                                БГ
+<header class="main-navigation">
+    <div class="navbar container">
+        <div class="navbar__logo">
+            <img src="../../assets/images/imgpsh_fullsize_anim.png" class="logo" />
+        </div>
+        <nav class="menu">
+            <ul class="menu__first-level">
+                {{#each menu.content}}
+                <li class="menu__list-item dropdown ">
+                    <a href="#">
+                        {{title}}
+                        {{#if secondLevel}}
+                        <img src="../../assets/images/arrow-nav.svg" class="first-level__link-arrow" alt="">
+                        <img src="../../assets/images/arrow-dropdown.svg" class="first-level__link-arrow--orange"
+                            alt="">
+                    </a>
+                    <ul class="menu__second-level">
+                        {{#each secondLevel}}
+                        <li class="second-level__list-item second-level__dropdown">
+                            <a href="" class="link__third-level">
+                                {{title}}
+                                {{#if thirdLevel}}
+                                <img src="../../assets/images/arrow-nav.svg" class="link-arrow" alt="">
+                                <img src="../../assets/images/arrow-dropdown.svg" class="link-arrow--orange" alt="">
                             </a>
-                            <ul class="menu__second-level">
-                                <li class="menu__list-item"><a href="">АЕ</a></li>
+
+                            <ul class="menu__third-level">
+                                {{#each thirdLevel}}
+                                <li class="third-level__list-item">
+                                    <a href="">{{title}}</a>
+                                </li>
+                                {{/each}}
                             </ul>
+                            {{/if}}
                         </li>
-                    </div>
-                </ul>
+                        {{/each}}
+                    </ul>
+                    {{/if}}
+                </li>
+                {{/each}}
+            </ul>
+            <div class="navbar__searching-and-lanugages">
+                <div class="icons-container">
+                    <li class=" icon ">
+                        <img src="../../assets/images/loupe.svg" alt="" class="icon-search" />
+                    </li>
+                    <li class="">
+                        <img src="../../assets/images/noun_Language.svg" alt="" class="icon-languages" />
+                    </li>
+                </div>
+                <li class="menu-list_item dropdown ">
+                    <a class="menu__list-item" href="">
+                        БГ
+                        <img src="../../assets/images/arrow-nav.svg" class="first-level__link-arrow" alt="">
+                        <img src="../../assets/images/arrow-dropdown.svg" class="first-level__link-arrow--orange"
+                            alt="">
+                    </a>
+                    <ul class="menu__second-level">
+                        <li class="menu__list-item"><a href="#">АЕ</a></li>
+                    </ul>
+                </li>
             </div>
+
         </nav>
     </div>
 </header>

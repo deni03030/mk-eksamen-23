@@ -1,48 +1,60 @@
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 50px;
+    @include media-breakpoint-down(xl) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+}
+
+.main-navigation {
+    display: none;
+
+    @include media-breakpoint-up(md) {
+        display: block;
+    }
 }
 
 .logo {
-    width: 150px;
+
+    @include media-breakpoint-down(xl) {
+        width: 150px;
+    }
 }
 
 .menu {
-    display: flex;
-    align-items: center;
 
 
-    .menu__first-level {
+    @include media-breakpoint-down(xl) {
         display: flex;
-        gap: 25px;
+        align-items: center;
     }
+}
 
-    .menu__list-item {
+.menu__first-level {
+
+
+    @include media-breakpoint-down(xl) {
+        display: flex;
+        gap: 15px;
+        margin-top: 10px;
+        padding-right: 20px;
+    }
+}
+
+.menu__list-item {
+
+    @include media-breakpoint-down(xl) {
         font-size: $theme-font-base;
         font-weight: 500;
         text-transform: uppercase;
     }
+}
 
-    .dropdown {
-        padding-right: 15px;
-        background-image: $menu-background-image;
-        background-repeat: $background-no-repeat;
-        background-size: $menu-background-size;
-        background-position: $menu-background-position;
-        background-position-x: $menu-background-position-x;
-    }
 
-    .dropdown:hover {
-        background-image: $menu-background-hover;
-        background-repeat: $background-no-repeat;
-        background-size: $menu-background-size;
-        background-position: $menu-background-position;
-        background-position-x: $menu-background-position-x;
-    }
+.menu__second-level {
 
-    .menu__second-level {
+    @include media-breakpoint-down(xl) {
         display: none;
         position: absolute;
         width: 250px;
@@ -52,33 +64,59 @@
         z-index: 1;
         text-transform: none;
     }
+}
 
-    .dropdown:hover .menu__second-level {
+.second-level__list-item {
+    @include media-breakpoint-down(xl) {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+}
+
+.dropdown:hover .menu__second-level {
+
+    @include media-breakpoint-down(xl) {
         display: block;
     }
+}
 
-    .menu__second-level:hover .link-arrow--orange {
+.menu__second-level:hover .link-arrow--orange {
+
+    @include media-breakpoint-down(xl) {
         display: none;
     }
+}
 
-    .dropdown:hover .link-arrow--orange {
+.dropdown:hover .link-arrow--orange {
+
+    @include media-breakpoint-down(xl) {
         display: none;
     }
+}
 
-    .second-level__dropdown:hover .link-arrow--orange {
+.second-level__dropdown:hover .link-arrow--orange {
+    display: none;
+
+    @include media-breakpoint-down(xl) {
         display: block;
         width: 10px;
     }
+}
 
-    .second-level__dropdown:hover .link-arrow {
+.second-level__dropdown:hover .link-arrow {
+
+    @include media-breakpoint-down(xl) {
         display: none;
     }
+}
 
-    .menu__third-level {
+.menu__third-level {
+
+    @include media-breakpoint-down(xl) {
         display: none;
         position: absolute;
-        left: 240px;
-        top: 60px;
+        left: 250px;
+        top: 72px;
         width: 250px;
         padding: 10px;
         background-color: $section-color-grey;
@@ -86,44 +124,101 @@
         z-index: 1;
         text-transform: none;
     }
+}
 
-    .second-level__dropdown:hover .menu__third-level {
+.second-level__dropdown:hover .menu__third-level {
+    display: none;
+
+    @include media-breakpoint-down(xl) {
         display: block;
     }
+}
 
-    .menu__third-level:hover .link-arrow--orange {
+.menu__third-level:hover .link-arrow--orange {
+
+    @include media-breakpoint-down(xl) {
         display: block;
     }
+}
 
-    .link__third-level {
+.link__third-level {
+
+    @include media-breakpoint-down(xl) {
         display: flex;
         justify-content: space-between;
     }
+}
 
-    .link-arrow {
+.link-arrow {
+
+
+    @include media-breakpoint-down(xl) {
         rotate: -90deg;
     }
+}
 
-    .link-arrow--orange {
+.link-arrow--orange {
+
+
+    @include media-breakpoint-down(xl) {
         rotate: 90deg;
     }
 }
 
+
 /* Icons STYLE */
-.icons-container {
+.navbar__searching-and-lanugages {
     display: flex;
+    flex-direction: row;
     align-items: center;
 
-    .icon-search {
+    @include media-breakpoint-down(xl) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.icon-search {
+
+    @include media-breakpoint-down(xl) {
         margin-bottom: 3px;
         height: 20px;
         margin-right: 20px;
     }
+}
 
-    .icon-languages {
+.icon-languages {
+
+
+    @include media-breakpoint-down(xl) {
         margin-bottom: 3px;
-        height: 20px;
         margin-right: 5px;
-
+        height: 20px;
     }
+}
+
+.first-level__link-arrow--orange {
+    display: none;
+}
+
+.menu__first-level:hover .first-level__link-arrow--orange {
+    @include media-breakpoint-down(xl) {
+        display: block;
+        float: right;
+        margin-top: 10px;
+        margin-left: 5px;
+        width: 10px;
+    }
+}
+
+.menu__first-level:hover .first-level__link-arrow {
+    @include media-breakpoint-down(xl) {
+        display: none;
+    }
+}
+
+.icons-container {
+    display: flex;
+    flex-direction: row;
 }

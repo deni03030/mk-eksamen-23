@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
+
 
 .container {
     max-width: 1360px;
@@ -9,7 +12,7 @@
 }
 
 a {
-    color: $link-color-black;
+    color: inherit;
 }
 
 a:link {
@@ -22,4 +25,22 @@ a:hover {
 
 li {
     list-style: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+.unstyled-button {
+    border: $none-border;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: $background-transparent;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
 }

@@ -6,6 +6,13 @@
     margin-top: 40px;
     margin-left: 10px;
     margin-right: 55px;
+
+    @include media-breakpoint-down(sm) {
+        width: 285px;
+        height: 285px;
+        margin-left: 5px;
+        margin-right: 0;
+    }
 }
 
 .cards-black {
@@ -15,6 +22,11 @@
     height: 400px;
     background: $career-background;
     mix-blend-mode: multiply;
+
+    @include media-breakpoint-down(sm) {
+        width: 285px;
+        height: 285px;
+    }
 }
 
 .link-image {
@@ -33,4 +45,10 @@
     color: $theme-color-secondary;
     font-weight: 500;
     border-left: 3px solid $theme-color-primary;
+
+    @include media-breakpoint-down(sm) {
+        width: 250px;
+        height: 52px;
+        font-size: $responsive-title-size;
+    }
 }

@@ -5,6 +5,11 @@
     height: 585px;
     margin-bottom: 350px;
     margin-top: 550px;
+
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+        margin-bottom: 650px;
+    }
 }
 
 .career__background {
@@ -16,6 +21,11 @@
     height: 485px;
     left: 0;
     background-color: $theme-color-primary;
+
+    @include media-breakpoint-down(sm) {
+        width: 375px;
+        height: 673px;
+    }
 }
 
 .career__grey-right {
@@ -25,6 +35,12 @@
     right: 0;
     margin-top: -350px;
     background-color: $section-color-grey;
+
+    @include media-breakpoint-down(sm) {
+        width: 345px;
+        height: 1017px;
+        margin-top: -400px;
+    }
 }
 
 .grey-right__content {
@@ -33,6 +49,19 @@
     justify-content: start;
     padding-top: 60px;
     padding-left: 55px;
+
+    @include media-breakpoint-down(sm) {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+}
+
+.information-title {
+    @include media-breakpoint-down(sm) {
+        font-size: $responsive-big-title-size;
+        font-weight: 700;
+        letter-spacing: $letter-spacing;
+    }
 }
 
 .information-underline {
@@ -40,20 +69,43 @@
     margin-left: 2px;
     width: 40px;
     border-top: 3.5px solid $theme-color-primary;
+
+    @include media-breakpoint-down(sm) {
+        width: 20px;
+        height: 2px;
+        margin-top: -5px;
+    }
 }
 
 .information-text {
     width: 649.3px;
     height: 59px;
+
+    @include media-breakpoint-down(sm) {
+        width: 270px;
+        height: 102px;
+        font-size: $responsive-paragraph-size;
+    }
 }
 
 .information-button {
-    height: 40px;
+    width: 180px;
+    height: 50px;
     margin-top: 5px;
+    padding: 20 20px;
     border: solid 2px $theme-color-primary;
     background-color: $theme-color-secondary;
     text-decoration: none;
     font-weight: 600;
+
+    @include media-breakpoint-down(sm) {
+        width: 180px;
+        height: 50px;
+        margin-bottom: 30px;
+        font-size: $responsive-paragraph-size;
+        font-weight: 700;
+        background-color: $section-color-grey;
+    }
 }
 
 .career__border {
@@ -62,13 +114,25 @@
     margin-top: 45px;
     margin-bottom: 25px;
     margin-left: 15px;
+
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
 }
 
 .careercards__cards-buttons {
     display: flex;
     flex-direction: row;
+
+    @include media-breakpoint-down(sm) {
+        flex-direction: column;
+    }
 }
 
 .career__information {
     margin-left: 15px;
+
+    @include media-breakpoint-down(sm) {
+        margin-left: 5px;
+    }
 }
