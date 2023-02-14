@@ -3,13 +3,24 @@ $theme-color-primary: #f3581e;
 $theme-color-secondary: #ffff;
 $link-color-black: rgb(0, 0, 0);
 $section-color-grey: #f5f5f5;
+$placeholder-color: #d6d6d6d6;
 $footer-color-grey: #e3e3e3;
+$burger-menu-color: #393939;
+$mobile-header-arrow: #aeaeae;
+
 // typography
 $theme-font-base: 16px;
 $theme-font-title: 40px;
 $line-height: 24px;
+$h2-font: 24px;
 $theme-font-small-title: 20px;
 $career-font-numbers: 50px;
+
+//Responsive size for typography
+$responsive-title-size: 18px;
+$responsive-paragraph-size: 15px;
+$responsive-big-title-size: 24px;
+$responsive-numbers-size: 30px;
 
 //menu-style
 $menu-background-image: url('../../assets/images/arrow-nav.svg');
@@ -22,14 +33,16 @@ $menu-background-position-x: 100%;
 $background-image: url('../../assets/images/arrow-small.svg');
 $background-image-hover: url('../../assets/images/arrow-small-orange.svg');
 $career-background: linear-gradient(to top, #393939, rgba(122, 122, 122, 0.29));
+$mobile-menu-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.109);
 $background-color: none;
 $background-no-repeat: no-repeat;
-$background-size: 20px 28px;
+$background-size: 20px 25px;
 $background-position: right;
 $background-position-x: 85%;
-
+$background-transparent: transparent;
 //box-styles
 $box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
+$letter-spacing: -1.5px;
 
 //Border styles
 $none-border: none;

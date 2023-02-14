@@ -2,13 +2,30 @@
     display: flex;
     flex-direction: row;
     margin-bottom: 150px;
+
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+        margin-bottom: 1250px;
+    }
 }
 
 .container-section__orange-side {
-    max-width: 674px;
-    width: 100%;
+    width: 674px;
     height: 861px;
     background-color: $theme-color-primary;
+
+    @include media-breakpoint-down(sm) {
+        width: 50%;
+        min-width: 159px;
+        height: 307px;
+    }
+}
+
+.about-section__text {
+    @include media-breakpoint-down(sm) {
+        width: fit-content;
+    }
+
 }
 
 .cards-side__about-section {
@@ -16,10 +33,22 @@
     margin-left: 60px;
     margin-bottom: 70px;
     width: 390px;
+
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+        margin-top: 960px;
+    }
 }
 
 .about-section__title {
     font-weight: 700;
+
+    @include media-breakpoint-down(sm) {
+        font-size: $responsive-big-title-size;
+        margin: 0;
+    }
 }
 
 .container-section__cards-side {
@@ -30,10 +59,16 @@
     position: absolute;
     margin-top: 50px;
     margin-left: 513px;
-    max-width: 1390px;
-    width: 100%;
+    width: 1390px;
     height: 760px;
     background-color: $section-color-grey;
+
+    @include media-breakpoint-down(sm) {
+        width: 70%;
+        height: 30%;
+        margin-top: 20px;
+        margin-left: 0;
+    }
 }
 
 .about-section__line {
@@ -41,4 +76,10 @@
     margin-left: 2px;
     width: 40px;
     border-top: 3.5px solid $theme-color-primary;
+
+    @include media-breakpoint-down(sm) {
+        width: 20px;
+        height: 2px;
+        margin-top: -5px;
+    }
 }

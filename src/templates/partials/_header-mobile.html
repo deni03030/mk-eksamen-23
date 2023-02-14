@@ -1,0 +1,124 @@
+<div class="header-mobile">
+    <div class="mobile__search-bar">
+        <div class="search-bar__logo">
+            <img src="../../assets/images/imgpsh_fullsize_anim.png" alt="mobile-logo" class="mobile-logo ">
+        </div>
+        <div class="search-bar__searching-button">
+            <button class="unstyled-button searching-button">
+                <img src="../../assets/images/loupe.svg" alt="searching-loupe" class="mobile-loupe">
+            </button>
+        </div>
+        <div class="search-bar__burger-button">
+            <button class="burger-button unstyled-button">
+                <div class="burger-container">
+                    <div class="burger">
+                        <div class="line-one lines-style"></div>
+                        <div class="line-two lines-style"></div>
+                        <div class="line-three lines-style"></div>
+                    </div>
+                </div>
+            </button>
+        </div>
+    </div>
+    <div class="mobile__searching-input searching-input">
+        <input type="text" name="" id="input" class="search-input" placeholder="Въведете ключова дума ">
+        <img src="../../assets/images/loupe.svg" alt="searching-loupe" class="input-loupe">
+    </div>
+    <div class="mobile__menu-list" id="mobile__menu-list">
+
+        <ul class="menu-list__first-level">
+            {{#each menu.content}}
+            <span class="space-span"></span>
+            <li class="first-level__menu-item ">
+
+                <a href=" {{link}} " class="space"> {{title}} </a>
+                {{#if secondLevel}}
+                <button class="unstyled-button mobile__item-button" type="button">
+                    <div class="menu-item__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9.022" height="5.3" viewBox="0 0 9.022 5.3">
+                            <path id="Path_1299" data-name="Path 1299"
+                                d="M106.634,4.159,102.62.144a.495.495,0,0,0-.7,0l-.3.3a.494.494,0,0,0,0,.7L105,4.509l-3.375,3.375a.495.495,0,0,0,0,.7l.3.3a.495.495,0,0,0,.7,0l4.019-4.018a.5.5,0,0,0,0-.7Z"
+                                transform="translate(9.022 -101.478) rotate(90)" fill="#393939" />
+                        </svg>
+                    </div>
+                </button>
+                <ul class="second-level">
+                    <li>
+                        <button class="unstyled-button second-level__button" type="button">
+                            <div class="menu-item__arrow back-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="9.022" height="5.3"
+                                    viewBox="0 0 9.022 5.3">
+                                    <path id="Path_1299" data-name="Path 1299"
+                                        d="M106.634,4.159,102.62.144a.495.495,0,0,0-.7,0l-.3.3a.494.494,0,0,0,0,.7L105,4.509l-3.375,3.375a.495.495,0,0,0,0,.7l.3.3a.495.495,0,0,0,.7,0l4.019-4.018a.5.5,0,0,0,0-.7Z"
+                                        transform="translate(9.022 -101.478) rotate(90)" fill="#393939" />
+                            </div>
+                            {{title}}
+                        </button>
+                    </li>
+                    {{#each secondLevel}}
+                    <li class="second-level__menu-item">
+                        <a href="" class="space">{{title}}</a>
+                        {{#if thirdLevel}}
+                        <button class="unstyled-button second-levele__button-third" type="button">
+                            <div class="menu-item__arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="9.022" height="5.3"
+                                    viewBox="0 0 9.022 5.3">
+                                    <path id="Path_1299" data-name="Path 1299"
+                                        d="M106.634,4.159,102.62.144a.495.495,0,0,0-.7,0l-.3.3a.494.494,0,0,0,0,.7L105,4.509l-3.375,3.375a.495.495,0,0,0,0,.7l.3.3a.495.495,0,0,0,.7,0l4.019-4.018a.5.5,0,0,0,0-.7Z"
+                                        transform="translate(9.022 -101.478) rotate(90)" fill="#393939" />
+                                </svg>
+                            </div>
+                        </button>
+                        <ul class="third-level">
+                            <li>
+                                <button class="unstyled-button third-level__button" type="button">
+                                    <div class="menu-item__arrow back-arrow">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="9.022" height="5.3"
+                                            viewBox="0 0 9.022 5.3">
+                                            <path id="Path_1299" data-name="Path 1299"
+                                                d="M106.634,4.159,102.62.144a.495.495,0,0,0-.7,0l-.3.3a.494.494,0,0,0,0,.7L105,4.509l-3.375,3.375a.495.495,0,0,0,0,.7l.3.3a.495.495,0,0,0,.7,0l4.019-4.018a.5.5,0,0,0,0-.7Z"
+                                                transform="translate(9.022 -101.478) rotate(90)" fill="#393939" />
+                                    </div>
+                                    {{title}}
+                                </button>
+                            </li>
+                            {{#each thirdLevel}}
+                            <li class="third-level__menu-item"> <a href="" class="space"> {{title}} </a> </li>
+                            {{/each}}
+                        </ul>
+                        {{/if}}
+                    </li>
+                    {{/each}}
+                </ul>
+                {{/if}}
+            </li>
+            {{/each}}
+        </ul>
+        <div class="mobile__menu-divider">
+            <span class="menu-divider"></span>
+        </div>
+
+        <div class="mobile__change-language">
+            <button class="language-button  unstyled-button">
+
+                <div class="language-image">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24.11" height="24.11" viewBox="0 0 24.11 24.11">
+                        <g id="noun_Language_1820061" transform="translate(-13.077 -14.354)">
+                            <path id="Path_3" data-name="Path 3"
+                                d="M25.132,14.354A12.055,12.055,0,1,0,37.188,26.409,12.069,12.069,0,0,0,25.132,14.354ZM19.5,26.409a17.953,17.953,0,0,1,.5-4.236h4.4v8.472H20A17.953,17.953,0,0,1,19.5,26.409ZM25.861,16c1.642.417,3.084,2.207,3.972,4.717H25.861ZM24.4,16v4.717H20.431C21.32,18.206,22.762,16.416,24.4,16Zm0,16.1v4.717c-1.642-.417-3.084-2.207-3.972-4.717Zm1.458,4.717V32.1h3.972C28.945,34.612,27.5,36.4,25.861,36.819Zm0-6.174V22.173h4.4a18.182,18.182,0,0,1,0,8.472Zm5.912-8.472H34.84a10.53,10.53,0,0,1,0,8.472H31.773a20.183,20.183,0,0,0,0-8.472Zm2.283-1.458H31.4a11.942,11.942,0,0,0-2.108-4.053A10.655,10.655,0,0,1,34.056,20.716ZM20.977,16.662a11.942,11.942,0,0,0-2.108,4.053H16.209A10.655,10.655,0,0,1,20.977,16.662Zm-5.553,5.511h3.067a20.183,20.183,0,0,0,0,8.472H15.424a10.53,10.53,0,0,1,0-8.472Zm.785,9.93H18.87a11.942,11.942,0,0,0,2.108,4.053A10.655,10.655,0,0,1,16.209,32.1Zm13.079,4.053A11.942,11.942,0,0,0,31.4,32.1h2.661A10.655,10.655,0,0,1,29.287,36.156Z"
+                                transform="translate(0)" fill="#393939" />
+                        </g>
+                    </svg>
+                </div>
+                БГ
+                <div class="menu-item__arrow language-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9.022" height="10" viewBox="0 0 9.022 5.3">
+                        <path id="Path_1299" data-name="Path 1299"
+                            d="M106.634,4.159,102.62.144a.495.495,0,0,0-.7,0l-.3.3a.494.494,0,0,0,0,.7L105,4.509l-3.375,3.375a.495.495,0,0,0,0,.7l.3.3a.495.495,0,0,0,.7,0l4.019-4.018a.5.5,0,0,0,0-.7Z"
+                            transform="translate(9.022 -101.478) rotate(90)" fill="#393939" />
+                    </svg>
+                </div>
+            </button>
+        </div>
+    </div>
+</div>

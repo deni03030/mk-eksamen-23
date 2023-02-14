@@ -8,6 +8,18 @@
     &:last-child {
         border-right: $none-border;
     }
+
+    @include media-breakpoint-down(sm) {
+        border: $none-border;
+        height: 50px;
+        margin-bottom: 20px;
+        margin-left: -5px;
+
+        &:last-child {
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+    }
 }
 
 .career__numbers {
@@ -16,6 +28,11 @@
     justify-content: flex-start;
     gap: 60px;
 
+    @include media-breakpoint-down(sm) {
+        flex-direction: column;
+        gap: 50px;
+    }
+
 }
 
 .numbers-counter {
@@ -23,6 +40,10 @@
     font-weight: 700;
     color: $theme-color-primary;
     margin-left: 10px;
+
+    @include media-breakpoint-down(sm) {
+        font-size: $responsive-numbers-size;
+    }
 }
 
 .container-text {
