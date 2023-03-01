@@ -1,0 +1,105 @@
+.tabs-menu {
+    display: flex;
+    flex-direction: row;
+    width: 335px;
+    height: 247px;
+    margin-top: 100px;
+    margin-bottom: 400px;
+    margin-left: 25px;
+    overflow: hidden;
+    background-color: $theme-color-primary;
+
+    @include media-breakpoint-up(md) {
+        width: 1523px;
+        height: 664px;
+        margin-left: 380px;
+        margin-bottom: 50px;
+    }
+}
+
+.tablinks {
+    width: 100px;
+    height: 60px;
+    color: $tab-color-white;
+
+    &.active {
+        color: $theme-color-secondary;
+        font-weight: 700;
+    }
+
+    @include media-breakpoint-up(md) {
+        width: 200px;
+        height: 60px;
+        margin-top: 10px;
+        font-size: $tab-menu-font;
+    }
+}
+
+.tablinks.active::after {
+    display: block;
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    margin-top: 27px;
+    margin-left: 40px;
+    background-color: $theme-color-primary;
+    border-right: $tab-border-right;
+    border-left: $tab-border-left;
+    border-top: $tab-border-top;
+
+    @include media-breakpoint-up(md) {
+        margin-top: 24px;
+        margin-left: 95px;
+    }
+}
+
+.tabcontent {
+    display: none;
+    width: 90%;
+    margin-left: -5px;
+    margin-top: -580px;
+    margin-bottom: 180px;
+    padding-top: 30px;
+    background-color: $section-color-grey;
+
+    @include media-breakpoint-up(md) {
+        max-width: 1364px;
+        width: 100%;
+        margin-top: -630px;
+        margin-left: 280px;
+
+    }
+}
+
+.active {
+    display: block;
+}
+
+.tabcontent__titles {
+    margin-bottom: 15px;
+    font-size: $responsive-title-size;
+
+    @include media-breakpoint-up(md) {
+        font-size: $theme-font-small-title;
+    }
+
+}
+
+.tabcontent__section {
+    margin-bottom: 30px;
+    border-bottom: 1px solid $footer-color-grey;
+}
+
+.tabcontent__section:last-child {
+    border-bottom: $none-border;
+    padding-bottom: 10px;
+}
+
+.tabcontent__text {
+    font-size: $responsive-paragraph-size;
+}
+
+.tabcontent.current {
+    display: inherit;
+}

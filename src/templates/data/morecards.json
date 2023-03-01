@@ -1,0 +1,20 @@
+{
+    "moreCards": [
+        {
+            "image": "../../assets/images/graduated.jpeg",
+            "text": "Защо ЧЕЗ?"
+        },
+        {
+            "image": "../../assets/images/university.jpeg",
+            "text": "Свободни позиции"
+        },
+        {
+            "image": "../../assets/images/graduated.jpeg",
+            "text": "Стажантска програма"
+        },
+        {
+            "image": "../../assets/images/university.jpeg",
+            "text": "ЧЕЗ в подкрепа на образованието"
+        }
+    ]
+}

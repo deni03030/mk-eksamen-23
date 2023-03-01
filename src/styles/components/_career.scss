@@ -32,14 +32,15 @@
     max-width: 1702px;
     height: 743px;
     position: absolute;
-    right: 0;
     margin-top: -350px;
+    margin-left: 199px;
     background-color: $section-color-grey;
 
     @include media-breakpoint-down(sm) {
         width: 345px;
         height: 1017px;
         margin-top: -400px;
+        margin-left: 30px;
     }
 }
 
