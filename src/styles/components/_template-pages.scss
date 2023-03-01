@@ -1,0 +1,150 @@
+// BANNER -->
+
+.banner {
+    display: flex;
+    flex-direction: row;
+
+    @include media-breakpoint-up(md) {
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+
+}
+
+.banner__color-side {
+    width: 238.5px;
+    height: 130px;
+    position: absolute;
+    margin-top: 52%;
+    left: 0;
+    background-color: $theme-color-primary;
+
+    @include media-breakpoint-up(md) {
+        width: 1135px;
+        height: 398px;
+        margin-top: 0;
+        left: 0;
+    }
+}
+
+.banner__image-side {
+    width: 343px;
+    height: 300px;
+    margin-bottom: 50px;
+    position: relative;
+
+    @include media-breakpoint-up(md) {
+        width: 1334px;
+        height: 420px;
+        margin-top: -60px;
+    }
+}
+
+.banner-image {
+    width: 343px;
+    height: 300px;
+    padding-right: 12px;
+    object-fit: cover;
+
+    @include media-breakpoint-up(md) {
+        width: 1334px;
+        height: 420px;
+        padding-right: 0;
+        object-position: 30% 30%;
+    }
+}
+
+// BREADCRUMB -->
+
+.breadcrumb-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.breadcrumb__col {
+    margin-right: 27px;
+    position: relative;
+}
+
+.breadcrumb__col:last-child {
+    margin-right: 0;
+}
+
+.breadcrumb__col::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-image: $menu-background-image;
+    background-repeat: $background-no-repeat;
+    transform: rotate(-90deg);
+    top: 17%;
+    right: -20px;
+}
+
+.breadcrumb__item {
+    display: inline-flex;
+    width: 100%;
+}
+
+.breadcrumb__col:last-child::after {
+    display: none;
+}
+
+.breadcrumb__col:last-child .breadcrumb__item {
+    color: $link-color-black;
+    font-weight: 600;
+}
+
+.breadcrumb__col:not(:last-child) .breadcrumb__item {
+    color: $burger-menu-color;
+}
+
+.item-border {
+    border-bottom: 0.5px solid $footer-color-grey;
+}
+
+// ARTICLE -->
+
+.article-title {
+    width: 203px;
+    height: 64px;
+    margin-top: 20px;
+    font-size: $h2-font;
+    font-weight: 700;
+    text-align: left;
+
+    @include media-breakpoint-up(md) {
+        width: 100%;
+        margin-top: 30px;
+        font-size: $theme-font-title;
+    }
+
+}
+
+.article-title__underline {
+    width: 40px;
+    height: 2px;
+    margin-top: -5px;
+    margin-left: 1px;
+    border-top: 4px solid $theme-color-primary;
+}
+
+.article-text {
+    font-size: $responsive-paragraph-size;
+    text-align: start;
+
+    @include media-breakpoint-up(md) {
+        width: 1000px;
+    }
+}
+
+.article-text--bold {
+    font-weight: 500;
+}
+
+.article-text__link {
+    color: $theme-color-primary;
+    font-weight: 500;
+}

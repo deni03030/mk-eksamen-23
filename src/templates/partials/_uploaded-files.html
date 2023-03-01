@@ -1,0 +1,16 @@
+<div class="files-container container">
+    <div class="title-container">
+        <h2 class="files-title">Прикачени файлове</h2>
+        <hr class="article-title__underline">
+    </div>
+    <div class="all-files">
+        {{#each files.information}}
+        <div class="file">
+            <a href="#" download="#">
+                <img src="{{image}}" alt="" class="file-image">
+            </a>
+            <p class="file-text">{{text}}</p>
+        </div>
+        {{/each}}
+    </div>
+</div>

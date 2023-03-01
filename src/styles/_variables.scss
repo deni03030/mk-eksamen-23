@@ -1,6 +1,7 @@
 // colors
 $theme-color-primary: #f3581e;
 $theme-color-secondary: #ffff;
+$tab-color-white: #ffffffab;
 $link-color-black: rgb(0, 0, 0);
 $section-color-grey: #f5f5f5;
 $placeholder-color: #d6d6d6d6;
@@ -11,6 +12,7 @@ $mobile-header-arrow: #aeaeae;
 // typography
 $theme-font-base: 16px;
 $theme-font-title: 40px;
+$tab-menu-font: 30px;
 $line-height: 24px;
 $h2-font: 24px;
 $theme-font-small-title: 20px;
@@ -25,6 +27,8 @@ $responsive-numbers-size: 30px;
 //menu-style
 $menu-background-image: url('../../assets/images/arrow-nav.svg');
 $menu-background-hover: url('../../assets/images/arrow-dropdown.svg');
+$gallery-pagination-arrow: url('../../assets/images/arrow-slide.svg');
+$transperant-background: transparent;
 $menu-background-size: 10px 15px;
 $menu-background-position: right;
 $menu-background-position-x: 100%;
@@ -40,6 +44,9 @@ $background-size: 20px 25px;
 $background-position: right;
 $background-position-x: 85%;
 $background-transparent: transparent;
+$transform-background-image: translateY(-50%);
+$swiper-style: unset;
+
 //box-styles
 $box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
 $letter-spacing: -1.5px;
@@ -52,3 +59,8 @@ $none-radius: 10px;
 $webkit: rotate(45deg);
 $transform: rotate(45deg);
 $second-transform: rotate(45deg);
+
+//tab
+$tab-border-right: solid 10px #f5f5f5;
+$tab-border-left: solid 10px #f5f5f5;
+$tab-border-top: solid 10px #f3581e;

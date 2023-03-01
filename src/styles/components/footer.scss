@@ -1,4 +1,5 @@
 .footer-main {
+    // remove flex
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -8,10 +9,12 @@
     width: 1135px;
     height: 580px;
     background-color: $theme-color-primary;
+    left: 0;
 
     @include media-breakpoint-down(sm) {
-        width: 261px;
-        height: 1275px;
+        width: 250px;
+        height: 1266px;
+        left: 0;
     }
 }
 
@@ -21,18 +24,18 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    width: 1834px;
-    height: 506px;
-    margin-top: 74px;
-    margin-left: 68px;
+    width: 1838px;
+    height: 511px;
+    margin-top: 70px;
     background-color: $section-color-grey;
 
-    @include media-breakpoint-down(sm) {
+
+    @include media-breakpoint-down(md) {
         flex-direction: column;
-        width: 356px;
-        height: 1225px;
-        margin-top: 50px;
-        margin-left: 19px;
+        width: 340px;
+        height: 1215px;
+        margin-top: 52px;
+        margin-left: 20px;
     }
 }
 
@@ -41,7 +44,6 @@
     gap: 60px;
 
     @include media-breakpoint-down(sm) {
-        display: flex;
         flex-direction: column;
         gap: 30px;
     }
@@ -164,6 +166,7 @@
     padding-right: 150px;
     padding-top: 5px;
     padding-bottom: 5px;
+    padding-left: 10px;
     box-shadow: $box-shadow;
     border: $none-border;
 

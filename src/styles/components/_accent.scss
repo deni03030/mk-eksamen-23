@@ -13,13 +13,11 @@
 }
 
 .container-accent__left-side {
-    width: 100%;
     margin-left: 30px;
 
 }
 
 .container-accent__right-side {
-    width: 100%;
     padding: 0 50px;
 
     @include media-breakpoint-up(md) {

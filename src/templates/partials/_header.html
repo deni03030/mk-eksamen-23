@@ -1,13 +1,15 @@
 <header class="main-navigation">
     <div class="navbar container">
         <div class="navbar__logo">
-            <img src="../../assets/images/imgpsh_fullsize_anim.png" class="logo" />
+            <a href="index.html">
+                <img src="../../assets/images/imgpsh_fullsize_anim.png" class="logo" />
+            </a>
         </div>
         <nav class="menu">
             <ul class="menu__first-level">
                 {{#each menu.content}}
                 <li class="menu__list-item dropdown ">
-                    <a href="#">
+                    <a href=" {{link}} ">
                         {{title}}
                         {{#if secondLevel}}
                         <img src="../../assets/images/arrow-nav.svg" class="first-level__link-arrow" alt="">
