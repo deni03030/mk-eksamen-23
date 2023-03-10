@@ -1,30 +1,17 @@
-.cards-side__all-cards {
-    display: flex;
-    margin-right: 180px;
-
-    @include media-breakpoint-down(sm) {
-        display: flex;
-        flex-direction: column;
-        margin-right: 0;
-    }
-}
-
 .cards-side__card {
-    width: 400px;
-    height: 400px;
-    margin-left: -130px;
-    margin-right: 20px;
-    padding: 65px;
+    flex: 0 0 300px;
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 30px;
     background-color: $theme-color-secondary;
     box-shadow: $box-shadow;
     text-align: start;
 
-    @include media-breakpoint-down(sm) {
-        width: 268px;
-        height: 310px;
-        margin-left: -80px;
-        margin-bottom: 20px;
-        padding: 20px;
+    @include media-breakpoint-up(md) {
+        flex: none;
+        width: 400px;
+        height: 400px;
+        padding: 50px;
     }
 }
 
@@ -40,8 +27,9 @@
     margin-top: 15px;
     font-size: $theme-font-small-title;
     font-weight: 700;
+    font-family: $font-robotocondensed-bold;
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         font-size: $responsive-title-size;
     }
 }
@@ -52,7 +40,7 @@
     text-align: left;
     font-size: $theme-font-base;
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         font-size: $responsive-paragraph-size;
         margin-top: 5px;
         height: 95px;

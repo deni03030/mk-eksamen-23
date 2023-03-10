@@ -1,47 +1,42 @@
 .numbers-information {
+    width: fit-content;
     display: flex;
     flex-direction: column;
-    height: 135px;
-    border-right: 2px solid $footer-color-grey;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 
-    &:last-child {
-        border-right: $none-border;
+    @include media-breakpoint-up(xl) {
+        width: 250px;
     }
 
-    @include media-breakpoint-down(sm) {
-        border: $none-border;
-        height: 50px;
-        margin-bottom: 20px;
-        margin-left: -5px;
-
-        &:last-child {
-            margin-top: 30px;
-            margin-bottom: 40px;
-        }
-    }
 }
 
-.career__numbers {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 60px;
 
-    @include media-breakpoint-down(sm) {
-        flex-direction: column;
-        gap: 50px;
+.information-text {
+    width: fit-content;
+}
+
+.numbers-border {
+    display: none;
+
+    @include media-breakpoint-up(xl) {
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        border-right: 2px solid $footer-color-grey;
+
+        &:last-child {
+            border-right: $none-border;
+        }
+
     }
-
 }
 
 .numbers-counter {
     font-size: $career-font-numbers;
     font-weight: 700;
     color: $theme-color-primary;
-    margin-left: 10px;
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         font-size: $responsive-numbers-size;
     }
 }
@@ -55,8 +50,5 @@
     font-size: $theme-font-base;
     font-weight: normal;
     color: $link-color-black;
-    width: 260px;
-    margin-right: 40px;
-    margin-left: 10px;
 
 }

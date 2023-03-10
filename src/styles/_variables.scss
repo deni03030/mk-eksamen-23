@@ -9,6 +9,36 @@ $footer-color-grey: #e3e3e3;
 $burger-menu-color: #393939;
 $mobile-header-arrow: #aeaeae;
 
+
+// font
+$font-opensans-regular: "OpenSans-Regular";
+
+@font-face {
+    font-family: $font-opensans-regular;
+    src: url("../../assets/fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+$font-opensans-extrabold: "OpenSans-ExtraBold";
+
+@font-face {
+    font-family: $font-opensans-extrabold;
+    src: url("../../assets/fonts/OpenSans-ExtraBold.ttf") format("truetype");
+}
+
+$font-robotocondensed-bold: "RobotoCondensed-Bold";
+
+@font-face {
+    font-family: $font-robotocondensed-bold;
+    src: url("../../assets/fonts/RobotoCondensed-Bold.ttf") format("truetype");
+}
+
+$font-robotocondensed-regular: "RobotoCondensed-Regular";
+
+@font-face {
+    font-family: $font-robotocondensed-regular;
+    src: url("../../assets/fonts/RobotoCondensed-Regular.ttf") format("truetype");
+}
+
 // typography
 $theme-font-base: 16px;
 $theme-font-title: 40px;
