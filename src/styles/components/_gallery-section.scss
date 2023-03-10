@@ -4,7 +4,7 @@
 }
 
 .gallery-section__left-side {
-    position: relative;
+    position: absolute;
     width: 187.5px;
     height: 366.5px;
     left: 0;
@@ -17,18 +17,16 @@
 }
 
 .gallery-section__right-side {
-    position: absolute;
-    width: 291px;
+    position: relative;
+    width: calc(100% - 83px);
+    margin-left: auto;
     height: 304px;
-    margin-left: 84px;
     margin-top: 30px;
-    right: 0;
     background-color: $section-color-grey;
 
     @include media-breakpoint-up(md) {
-        width: 1390px;
+        width: calc(100% - 530px);
         height: 667px;
-        margin-left: 350px;
         margin-top: 50px;
     }
 }
@@ -53,12 +51,14 @@
 }
 
 .gallery-content {
-    margin-left: -100px;
+    width: calc(100% - 16px);
+    height: 100%;
+    margin-left: auto;
 
     @include media-breakpoint-up(md) {
-        width: 1645px;
+        width: calc(100% - 275px);
         height: 451px;
-        margin-left: -430px;
+        margin-left: -275px;
     }
 }
 

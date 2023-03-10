@@ -3,7 +3,7 @@
     margin-bottom: 70px;
     width: 100%;
 
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(xl) {
         display: none;
     }
 }
@@ -16,10 +16,13 @@
     box-shadow: $mobile-menu-shadow;
 }
 
+.search-bar__buttons {
+    display: flex;
+}
+
 .search-bar__searching-button {
-    padding-top: 15px;
-    align-items: flex-end;
-    margin-left: 9rem;
+    margin-top: 15px;
+    margin-right: 20px;
 }
 
 .mobile__searching-input {

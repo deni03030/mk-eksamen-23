@@ -1,55 +1,40 @@
 .career {
-    position: relative;
-    max-width: 1920px;
-    width: 100%;
-    height: 585px;
-    margin-bottom: 350px;
-    margin-top: 550px;
+    margin-bottom: 50px;
 
-    @include media-breakpoint-down(sm) {
-        width: 100%;
-        margin-bottom: 650px;
+    @include media-breakpoint-up(xl) {
+        margin-bottom: 300px;
     }
 }
 
-.career__background {
-    position: absolute;
-}
-
 .career__orange-left {
-    width: 1900px;
-    height: 485px;
-    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 673px;
+    margin-top: 50%;
     background-color: $theme-color-primary;
 
-    @include media-breakpoint-down(sm) {
-        width: 375px;
-        height: 673px;
+    @include media-breakpoint-up(xl) {
+        height: 485px;
+        margin-top: 19%;
     }
 }
 
 .career__grey-right {
-    max-width: 1702px;
-    height: 743px;
-    position: absolute;
-    margin-top: -350px;
-    margin-left: 199px;
+    position: relative;
+    width: calc(100% - 2%);
+    height: 1017.2px;
+    margin-left: auto;
     background-color: $section-color-grey;
 
-    @include media-breakpoint-down(sm) {
-        width: 345px;
-        height: 1017px;
-        margin-top: -400px;
-        margin-left: 30px;
+    @include media-breakpoint-up(xl) {
+        width: calc(100% - 5%);
+        height: 743px;
     }
 }
 
 .grey-right__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
     padding-top: 60px;
-    padding-left: 55px;
+    padding-left: 0;
 
     @include media-breakpoint-down(sm) {
         padding-left: 0;
@@ -58,6 +43,8 @@
 }
 
 .information-title {
+    font-family: $font-robotocondensed-bold;
+
     @include media-breakpoint-down(sm) {
         font-size: $responsive-big-title-size;
         font-weight: 700;
@@ -83,8 +70,6 @@
     height: 59px;
 
     @include media-breakpoint-down(sm) {
-        width: 270px;
-        height: 102px;
         font-size: $responsive-paragraph-size;
     }
 }
@@ -110,30 +95,54 @@
 }
 
 .career__border {
-    border-top: 1px solid $footer-color-grey;
-    width: 82.5%;
-    margin-top: 45px;
-    margin-bottom: 25px;
-    margin-left: 15px;
+    display: none;
 
-    @include media-breakpoint-down(sm) {
-        display: none;
+    @include media-breakpoint-up(xl) {
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-top: 2px solid $footer-color-grey;
+        margin-left: 45px;
+        margin-right: 25%;
+
     }
 }
 
 .careercards__cards-buttons {
+    position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: nowrap;
+    overflow-x: scroll;
 
-    @include media-breakpoint-down(sm) {
-        flex-direction: column;
+    @include media-breakpoint-up(xl) {
+        flex-direction: row;
+        margin-left: 45px;
+        overflow-x: hidden;
     }
 }
 
 .career__information {
-    margin-left: 15px;
+    margin-left: 5px;
 
-    @include media-breakpoint-down(sm) {
-        margin-left: 5px;
+    @include media-breakpoint-up(xl) {
+        margin-left: 45px;
+    }
+}
+
+.career__numbers {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+
+    @include media-breakpoint-up(xl) {
+        flex-direction: row;
+        margin-left: 45px;
+        gap: 60px;
+        padding-left: 40px;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
     }
 }

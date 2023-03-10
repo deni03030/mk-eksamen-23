@@ -3,7 +3,7 @@
 
     <div class="footer__right-side">
         <div class="grid-container container ">
-            <div class="right-side__service ">
+            <div class="right-side__service">
                 <p class="footer-titles">Обслужване на клиенти</p>
                 {{#each services.data}}
                 {{> _rowfooter }}
@@ -25,33 +25,34 @@
 
                 <p class="bulletin__title footer-titles">Абонирай се за бюлетин</p>
                 <hr class="about-section__line">
-                <form action="" class="bulletin-form">
-                    <label class="bulletin__checkbox private-costumers">
-                        <input type="checkbox" class="bulletin__checkbox-style">
-                        <p class="checkbox-text"> Битов
-                            клиент</p>
+                <form action="/" class="bulletin-form">
+
+                    <label class="bulletin__checkbox private-costumers" for="private"> <input type="checkbox"
+                            id="private" name="private" value="private-costumers" class="checkbox" />
+                        Битов клиент
                     </label>
-                    <label class="bulletin__checkbox private-costumers">
-                        <input type="checkbox" class="bulletin__checkbox-style">
-                        <p class="checkbox-text">Бизнес
-                            клиент</p>
+
+
+                    <label class="bulletin__checkbox private-costumers" for="business"><input type="checkbox"
+                            name="checkbox" id="business" value="business-costumers" class="checkbox" />
+                        Бизнес клиент
                     </label>
 
                     <div class="bulletin__subscribe">
-                        <input type="text" name="" id="subscribe_email" class="subscribe_email" placeholder="Имейл"
-                            class="bulletin__email">
+                        <input type="text" name="e-mail" id="subscribe_email" class="subscribe_email bulletin__email"
+                            placeholder="Имейл">
                         <button class="bulletin__submit">Абонирай се</button>
                     </div>
                 </form>
             </div>
-            <div class="footer__bottom">
-                <div class="bottom__left">
-                    <p class="bottom__copyright">© 2023 - ЧЕЗ България</p>
-                </div>
-                <div class="bottom__right">
-                    <p class="bottom__pytek">Дизайн и програмиране: <img src="../../assets/images/pytek.svg" alt="">
-                    </p>
-                </div>
+        </div>
+        <div class="footer__bottom container">
+            <div class="bottom__left">
+                <p class="bottom__copyright">© 2023 - ЧЕЗ България</p>
+            </div>
+            <div class="bottom__right">
+                <p class="bottom__pytek">Дизайн и програмиране: <img src="../../assets/images/pytek.svg" alt="">
+                </p>
             </div>
         </div>
     </div>

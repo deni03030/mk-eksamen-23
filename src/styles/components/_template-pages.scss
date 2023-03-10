@@ -12,18 +12,17 @@
 }
 
 .banner__color-side {
-    width: 238.5px;
+    width: calc(100% - 121.5px);
+    margin-right: auto;
     height: 130px;
     position: absolute;
-    margin-top: 52%;
-    left: 0;
     background-color: $theme-color-primary;
 
-    @include media-breakpoint-up(md) {
-        width: 1135px;
+    @include media-breakpoint-up(xl) {
+        width: calc(100% - 607px);
+        margin-right: auto;
         height: 398px;
-        margin-top: 0;
-        left: 0;
+
     }
 }
 
@@ -108,8 +107,6 @@
 // ARTICLE -->
 
 .article-title {
-    width: 203px;
-    height: 64px;
     margin-top: 20px;
     font-size: $h2-font;
     font-weight: 700;

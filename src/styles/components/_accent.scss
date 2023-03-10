@@ -1,37 +1,35 @@
-.container-accent {
+.accent {
     display: flex;
     flex-direction: column-reverse;
-    margin-bottom: 100px;
-    padding: 0;
-    align-items: center;
+    height: fit-content;
+    padding-bottom: 100px;
 
-    @include media-breakpoint-up(md) {
-        width: 100%;
+    @include media-breakpoint-up(xl) {
         flex-direction: row;
-        margin-top: 50px;
+        margin-top: 100px;
+        padding-bottom: 150px;
     }
 }
 
-.container-accent__left-side {
-    margin-left: 30px;
+.accent__left-side {
+    width: 100%;
+    margin: 0 10px;
 
-}
-
-.container-accent__right-side {
-    padding: 0 50px;
-
-    @include media-breakpoint-up(md) {
-        padding: 0;
-        margin-left: 50px;
+    @include media-breakpoint-up(xl) {
+        margin-top: 150px;
     }
 }
 
 .left-side__title {
-    width: 60%;
+    margin-top: 20px;
     margin-bottom: 20px;
     font-size: $h2-font;
     font-weight: 700;
-    text-align: left;
+    font-family: $font-robotocondensed-bold;
+}
+
+.left-side__text-box {
+    width: fit-content;
 }
 
 .title_underline {
@@ -40,51 +38,44 @@
     margin-top: -5px;
     margin-left: 1px;
     border-top: 3px solid $theme-color-primary;
-}
 
-.left-side__text-box {
-    width: 80%;
-    height: auto;
-    margin-bottom: 20px;
-
-}
-
-.text-box {
-    width: fit-content;
-    align-items: start;
-    text-align: start;
-    font-size: $responsive-paragraph-size;
+    @include media-breakpoint-up(xl) {
+        width: 40px;
+        margin-top: 0;
+        margin-left: 0;
+    }
 }
 
 .left-side_more-btn {
-    width: 180px;
-    height: 50px;
+    padding: 10px 20px;
     margin-bottom: 20px;
     font-weight: 700;
     border: solid 2px $theme-color-primary;
 }
 
-.right-side__container-img {
-    width: 284px;
-    height: 327px;
-    margin-bottom: 20px;
+.accent__right-side {
+    height: 312px;
+    margin: 0 20px 0 40px;
     background-color: $theme-color-primary;
 
-    @include media-breakpoint-up(md) {
-        width: 615px;
+    @include media-breakpoint-up(xl) {
+        width: 100%;
         height: 712px;
     }
 }
 
-.right-side__image {
-    width: 286px;
-    height: 322px;
-    margin-top: -30px;
-    margin-left: -40px;
-    object-fit: cover;
 
-    @include media-breakpoint-up(md) {
-        width: 615px;
-        height: 712px;
+.right-side__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 70% 30%;
+    margin-left: -25px;
+    margin-top: -25px;
+
+    @include media-breakpoint-up(xl) {
+        object-position: 66% 34%;
+        margin-left: -45px;
+        margin-top: -45px;
     }
 }

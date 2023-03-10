@@ -1,7 +1,6 @@
 .swiper {
-    width: 375px;
+    width: fit-content;
     height: 250px;
-    position: relative;
 
     @include media-breakpoint-up(md) {
         width: 1645px;
@@ -49,7 +48,7 @@
     top: 78%;
     position: absolute;
     bottom: -80px;
-    right: calc(7% - 5px);
+    right: calc(9% - 5px);
 
     @include media-breakpoint-up(md) {
         top: 95%;

@@ -1,21 +1,17 @@
-<section class="container container-accent">
-    <div class="container-accent__left-side">
+<section class="container accent">
+    <div class="accent__left-side">
         <h2 class="left-side__title">
             {{sectionTitle}}
         </h2>
         <hr class="title_underline" />
-        <div class="left-side__text-box">
-            <span class="text-box">
-                {{aboutSection}}
-            </span>
+        <p class="left-side__text-box">
+            {{aboutSection}}
+        </p>
 
-        </div>
         <button class="left-side_more-btn unstyled-button"> <a href="{{linkToPage}}">Прочети повече</a> </button>
     </div>
 
-    <div class="container-accent__right-side">
-        <div class="right-side__container-img">
-            <img class="right-side__image" src={{sectionImage}} alt="images" />
-        </div>
+    <div class="accent__right-side">
+        <img class="right-side__image" src={{sectionImage}} alt="images" />
     </div>
 </section>

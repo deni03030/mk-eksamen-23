@@ -1,7 +1,7 @@
 <section class="career">
-    <div class="career__orange-left career__background"></div>
+    <div class="career__orange-left"></div>
 
-    <div class="career__grey-right career__background container">
+    <div class="career__grey-right">
 
         <div class="grey-right__content">
             <div class="career__information">
@@ -16,6 +16,7 @@
             <div class="career__numbers">
                 {{#each career.counter}}
                 {{> _careernumbers }}
+                <span class="numbers-border"></span>
                 {{/each}}
             </div>
             <div class="careercards__cards-buttons">
