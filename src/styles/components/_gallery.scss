@@ -1,4 +1,4 @@
-.swiper {
+.gallery {
     width: fit-content;
     height: 250px;
 
@@ -8,11 +8,11 @@
     }
 }
 
-.swiper-wrapper {
+.gallery-wrapper {
     position: relative;
 }
 
-.swiper-slide {
+.gallery-slide {
     width: 30%;
 
     @include media-breakpoint-up(md) {
@@ -25,9 +25,7 @@
     }
 }
 
-
-
-.swiper-slide img {
+.gallery-image {
     display: block;
     width: 145px;
     height: 148px;
@@ -40,14 +38,14 @@
     }
 }
 
-.swiper [class^="swiper-button-"]::after {
+.gallery [class^="swiper-button-"]::after {
     content: "";
 }
 
-.swiper .swiper-button-next {
-    top: 78%;
+.gallery .gallery-button-next {
+    top: 98%;
     position: absolute;
-    bottom: -80px;
+    bottom: -120px;
     right: calc(9% - 5px);
 
     @include media-breakpoint-up(md) {
@@ -57,7 +55,7 @@
     }
 }
 
-.swiper .swiper-button-prev {
+.gallery .gallery-button-prev {
     top: 78%;
     position: absolute;
     bottom: -80px;

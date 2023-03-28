@@ -8,9 +8,9 @@ $placeholder-color: #d6d6d6d6;
 $footer-color-grey: #e3e3e3;
 $burger-menu-color: #393939;
 $mobile-header-arrow: #aeaeae;
+$swiper-numbers-color: #606060;
 
-
-// font
+// fonts
 $font-opensans-regular: "OpenSans-Regular";
 
 @font-face {
@@ -39,7 +39,7 @@ $font-robotocondensed-regular: "RobotoCondensed-Regular";
     src: url("../../assets/fonts/RobotoCondensed-Regular.ttf") format("truetype");
 }
 
-// typography
+// font-size
 $theme-font-base: 16px;
 $theme-font-title: 40px;
 $tab-menu-font: 30px;
@@ -47,21 +47,14 @@ $line-height: 24px;
 $h2-font: 24px;
 $theme-font-small-title: 20px;
 $career-font-numbers: 50px;
+$swiper-numbers-size: 80px;
+$swiper-numbers-responsive: 39px;
 
-//Responsive size for typography
+//Responsive font-size
 $responsive-title-size: 18px;
 $responsive-paragraph-size: 15px;
 $responsive-big-title-size: 24px;
 $responsive-numbers-size: 30px;
-
-//menu-style
-$menu-background-image: url('../../assets/images/arrow-nav.svg');
-$menu-background-hover: url('../../assets/images/arrow-dropdown.svg');
-$gallery-pagination-arrow: url('../../assets/images/arrow-slide.svg');
-$transperant-background: transparent;
-$menu-background-size: 10px 15px;
-$menu-background-position: right;
-$menu-background-position-x: 100%;
 
 //Background styles
 $background-image: url('../../assets/images/arrow-small.svg');
@@ -79,6 +72,7 @@ $swiper-style: unset;
 
 //box-styles
 $box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
+$content-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.16);
 $letter-spacing: -1.5px;
 
 //Border styles
@@ -90,7 +84,21 @@ $webkit: rotate(45deg);
 $transform: rotate(45deg);
 $second-transform: rotate(45deg);
 
+//menu-style
+$menu-background-image: url('../../assets/images/arrow-nav.svg');
+$menu-background-hover: url('../../assets/images/arrow-dropdown.svg');
+$gallery-pagination-arrow: url('../../assets/images/arrow-slide.svg');
+$transperant-background: transparent;
+$menu-background-size: 10px 15px;
+$menu-background-position: right;
+$menu-background-position-x: 100%;
+
 //tab
 $tab-border-right: solid 10px #f5f5f5;
 $tab-border-left: solid 10px #f5f5f5;
 $tab-border-top: solid 10px #f3581e;
+
+//line-hight
+
+$swiper-line-hight-primary: 3rem;
+$swiper-line-hight-secondary: 1rem;

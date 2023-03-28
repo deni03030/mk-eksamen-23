@@ -1,0 +1,63 @@
+<div class="swiper-accent">
+    <div class="swiper-accent__left swiper-accent__left--orange"></div>
+    <div class="swiper-accent__left swiper-accent__left--grey"></div>
+    <div class="container swiper-accent__container">
+        <div class="swiper mySwiper slider">
+            <div class="swiper-wrapper swiper-accent__wrapper">
+                <div class="swiper-slide swiper-accent__slide" data-slide="1">
+                    <picture>
+                        <source class="slide-image" srcset="../../assets/images/Image8.png" width="1218" height="809"
+                            media="(min-width:1025px)">
+                        <source class="slide-image" srcset="../../assets/images/Image8.png" width="650" height="430"
+                            media="(min-width:767px)">
+                        <img class="slide-image" src="../../assets/images/Image8.png" width="343" height="341" alt>
+                    </picture>
+                </div>
+                <div class="swiper-slide swiper-accent__slide" data-slide="2">
+                    <picture>
+                        <source class="slide-image" srcset="../../assets/images/Building_CEZ.jpg" width="1218"
+                            height="809" media="(min-width:1025px)">
+                        <source class="slide-image" srcset="../../assets/images/Building_CEZ.jpg" width="650"
+                            height="430" media="(min-width:767px)">
+                        <img class="slide-image" src="../../assets/images/Building_CEZ.jpg" width="343" height="341"
+                            alt>
+                    </picture>
+                </div>
+                <div class="swiper-slide swiper-accent__slide" data-slide="3">
+                    <picture>
+                        <source class="slide-image" srcset="../../assets/images/Gintsi.jpg" width="1218" height="809"
+                            media="(min-width:1025px)">
+                        <source class="slide-image" srcset="../../assets/images/Gintsi.jpg" width="650" height="430"
+                            media="(min-width:767px)">
+                        <img class="slide-image" src="../../assets/images/Gintsi.jpg" width="343" height="341" alt>
+                    </picture>
+                </div>
+                <div class="swiper-slide swiper-accent__slide" data-slide="4">
+                    <picture>
+                        <source class="slide-image" srcset="../../assets/images/RES_ERM.jpg" width="1218" height="809"
+                            media="(min-width:1025px)">
+                        <source class="slide-image" srcset="../../assets/images/RES_ERM.jpg" width="650" height="430"
+                            media="(min-width:767px)">
+                        <img class="slide-image" src="../../assets/images/RES_ERM.jpg" width="343" height="341" alt>
+                    </picture>
+                </div>
+            </div>
+        </div>
+        <div class="content-pagination__wrapper">
+            <div class="swiper-slide__content">
+                {{#each swiper-accent.swiperContent}}
+                <div class="slide-content {{class}}" data-slide="{{dataSlide}}">
+                    <h2 class="content-title">{{title}}</h2>
+                    <hr class="content-underline">
+                    <p class="content-text">
+                        {{text}}
+                    </p>
+                    <button class="content-button unstyled-button">Прочети повече</button>
+                </div>
+                {{/each}}
+            </div>
+            <div class="swiper-pagination swiper-pagination__numbers">
+            </div>
+        </div>
+    </div>
+</div>

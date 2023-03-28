@@ -1,9 +1,7 @@
-// import Swiper JS
 import Swiper, { Navigation } from 'swiper';
 
 function gallery() {
     return new Swiper('.gallery', {
-
         modules: [Navigation],
         slidesPerView: 2.5,
         spaceBetween: 10,
@@ -26,5 +24,7 @@ function gallery() {
             },
         }
     });
+
 }
+
 export default gallery;
