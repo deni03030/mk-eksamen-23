@@ -1,7 +1,7 @@
 //General for mobile header
 .header-mobile {
-    margin-bottom: 70px;
     width: 100%;
+    z-index: 100;
 
     @include media-breakpoint-up(xl) {
         display: none;
