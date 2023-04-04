@@ -1,0 +1,122 @@
+.accordion {
+    position: relative;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+
+
+    &__background {
+        position: absolute;
+
+        &--orange {
+            width: 80%;
+            height: 100%;
+            right: 0;
+            bottom: -50px;
+            background-color: $theme-color-primary;
+            z-index: -2;
+        }
+
+        &--grey {
+            width: 95%;
+            height: 100%;
+            left: 0;
+            background-color: $section-color-grey;
+            z-index: -1;
+
+            @include media-breakpoint-up(md) {
+                width: 85%;
+            }
+
+            @include media-breakpoint-up(xl) {
+                width: 85%;
+            }
+        }
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        text-align: start;
+        cursor: pointer;
+        font-weight: 700;
+        font-family: $font-robotocondensed-bold;
+        font-size: $responsive-title-size;
+
+        @include media-breakpoint-up(xl) {
+            font-size: $theme-font-small-title;
+        }
+
+    }
+}
+
+.accordion__content {
+    display: none;
+    padding-top: 15px;
+    animation: transitionIn 0.75s;
+
+    @keyframes transitionIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+.visible {
+    display: block;
+}
+
+.accordion__item {
+    width: 90%;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: $theme-color-secondary;
+    padding: 10px 15px;
+    margin: 10px 0;
+
+    &:first-child {
+        margin-top: 30px;
+    }
+
+    &:last-child {
+        margin-bottom: 30px;
+    }
+
+    @include media-breakpoint-up(md) {
+        width: 80%;
+    }
+
+    @include media-breakpoint-up(xl) {
+        width: 85%;
+    }
+}
+
+.accordion__title-arrow {
+
+    &.visible {
+        transform: rotate(180deg);
+    }
+
+    svg {
+        width: 15px;
+        height: 15px;
+        padding-left: 5px;
+    }
+
+}
+
+.accordion__wrapper-container {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
