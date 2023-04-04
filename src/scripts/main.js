@@ -4,6 +4,7 @@ import { burgerButton, showSearchInput, handleMenu } from './modules/header';
 import gallery from './modules/gallery';
 import openTab from './modules/tabs';
 import swiperHome from './modules/swiper-accent';
+import openItem from './modules/accordion';
 
 $(document).ready(() => {
     careerNumbers();
@@ -13,4 +14,5 @@ $(document).ready(() => {
     gallery();
     openTab();
     swiperHome();
+    openItem();
 });
