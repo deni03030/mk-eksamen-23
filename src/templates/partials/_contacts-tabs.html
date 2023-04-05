@@ -8,7 +8,7 @@
 <div id="telephones" class="tabcontent  active container">
     {{#each contacts.telephones}}
     <div class="tabcontent__section">
-        <h2 class="tabcontent__titles">{{title}}</h2>
+        <h3 class="tabcontent__titles">{{title}}</h3>
         <hr class="title_underline">
         <p class="tabcontent__text"> {{number}} </p>
         <p class="tabcontent__text"> {{workingHours}} </p>
@@ -20,11 +20,11 @@
 <div id="addresses" class="tabcontent container">
     {{#each contacts.addresses}}
     <div class="tabcontent__section">
-        <h2 class="tabcontent__titles">{{title}}</h2>
+        <h3 class="tabcontent__titles">{{title}}</h3>
         <hr class="title_underline">
         <p class="tabcontent__text"> {{city}} </p>
         <p class="tabcontent__text"> {{street}} </p>
-        <button class="unstyled-button tabcontent__text">
+        <button class="unstyled-button">
             {{more}}
         </button>
     </div>
@@ -34,7 +34,7 @@
 <div id="mails" class="tabcontent container">
     {{#each contacts.mails}}
     <div class="tabcontent__section">
-        <h2 class="tabcontent__titles">{{title}}</h2>
+        <h3 class="tabcontent__titles">{{title}}</h3>
         <hr class="title_underline">
         <p class="tabcontent__text"> {{mail}} </p>
     </div>

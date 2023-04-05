@@ -1,90 +1,94 @@
-.footer-main {
+.footer {
     justify-content: space-between;
-}
 
-.footer__left-side {
-    position: absolute;
-    width: calc(100% - 114px);
-    height: 1275px;
-    margin-right: auto;
-    background-color: $theme-color-primary;
+    &__left-side {
+        position: absolute;
+        width: calc(100% - 114px);
+        height: 1275px;
+        margin-right: auto;
+        background-color: $theme-color-primary;
 
-    @include media-breakpoint-up(xl) {
-        width: calc(100% - 784px);
-        height: 580px;
-        left: 0;
+        @include media-breakpoint-up(xl) {
+            width: calc(100% - 784px);
+            height: 580px;
+            left: 0;
+        }
     }
-}
-
-.footer__right-side {
-    position: relative;
-    margin-left: auto;
-    width: calc(100% - 19px);
-    height: 1218.8px;
-    top: 57px;
-    background-color: $section-color-grey;
 
 
-    @include media-breakpoint-up(xl) {
-        width: calc(100% - 85px);
-        height: 506px;
+    &__right-side {
+        position: relative;
         margin-left: auto;
-        padding-top: 80px;
-        top: 74px;
+        width: calc(100% - 19px);
+        height: 1219px;
+        top: 57px;
+        background-color: $section-color-grey;
 
+
+        @include media-breakpoint-up(xl) {
+            width: calc(100% - 85px);
+            height: 506px;
+            margin-left: auto;
+            padding-top: 80px;
+            top: 74px;
+
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 25px;
+
+        @include media-breakpoint-up(xl) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 40px;
+            margin-top: 40px;
+            border-top: 1px solid $footer-color-grey;
+
+        }
     }
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20;
+.footer-content {
 
-    @include media-breakpoint-up(xl) {
-        grid-template-columns: 1fr 1fr 1fr;
+    &--grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20;
+
+        @include media-breakpoint-up(xl) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
     }
 
-}
+    &__information {
+        border-left: $none-border;
+        padding-left: 0;
+        padding-bottom: 0;
+        border-top: 2px solid $footer-color-grey;
 
-.right-side__information {
-    border-left: $none-border;
-    padding-left: 0;
-    padding-bottom: 0;
-    border-top: 2px solid $footer-color-grey;
+        @include media-breakpoint-up(xl) {
+            padding-left: 80px;
+            border-left: 1px solid $footer-color-grey;
+            border-top: $none-border;
+        }
+    }
 
-    @include media-breakpoint-up(xl) {
+    &__bulletin {
         padding-left: 80px;
         border-left: 1px solid $footer-color-grey;
-        border-top: $none-border;
+
+        @include media-breakpoint-down(md) {
+            border-left: $none-border;
+            border-top: 2px solid $footer-color-grey;
+            padding-left: 0;
+        }
     }
-}
 
-.right-side__bulletin {
-    padding-left: 80px;
-    border-left: 1px solid $footer-color-grey;
-
-    @include media-breakpoint-down(md) {
-        border-left: $none-border;
-        border-top: 2px solid $footer-color-grey;
-        padding-left: 0;
-    }
-}
-
-.footer__bottom {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-right: 25px;
-
-    @include media-breakpoint-up(xl) {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-top: 40px;
-        margin-top: 40px;
-        border-top: 1px solid $footer-color-grey;
-
-    }
 }
 
 .information__links {
@@ -106,13 +110,13 @@
 }
 
 .footer-titles {
-    font-size: $theme-font-small-title;
-    font-weight: 500;
+    font-size: $responsive-title-size;
+    font-weight: 800;
+    padding-top: 20px;
 
-    @include media-breakpoint-down(sm) {
-        padding-top: 20px;
-        font-size: $responsive-title-size;
-        font-weight: 700;
+    @include media-breakpoint-up(md) {
+        font-size: $theme-font-small-title;
+        padding-top: 0;
     }
 }
 
@@ -120,7 +124,7 @@
     display: grid;
     grid-template-columns: 150px 150px;
 
-    .bulletin-form::after {
+    &::after {
         content: "";
         display: table;
     }
@@ -130,9 +134,9 @@
     }
 
     .bulletin__submit {
-        height: 40px;
         margin-top: 20px;
         padding: 5px 20px;
+        cursor: pointer;
         border: solid 2px $theme-color-primary;
         background-color: $section-color-grey;
         text-decoration: none;

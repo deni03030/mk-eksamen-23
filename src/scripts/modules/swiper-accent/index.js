@@ -11,7 +11,7 @@ function swiperHome() {
             el: '.swiper-pagination',
             clickable: true,
             renderBullet(index, className) {
-                return `<span class="${className}"> ${((index + 1).toString()).padStart(2, '0')}</span> `;
+                return `<button class="${className}"> ${((index + 1).toString()).padStart(2, '0')}</button> `;
             }
         },
         autoplay: {

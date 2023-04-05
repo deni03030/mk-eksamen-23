@@ -1,17 +1,19 @@
-<footer class="footer-main">
+<footer class="footer">
+    <h1 class="screen-reader-only">Футър</h1>
+
     <div class="footer__left-side"></div>
 
     <div class="footer__right-side">
-        <div class="grid-container container ">
-            <div class="right-side__service">
-                <p class="footer-titles">Обслужване на клиенти</p>
+        <div class="container footer-content footer-content--grid">
+            <div class="footer-content__service">
+                <h2 class="footer-titles">Обслужване на клиенти</h2>
                 {{#each services.data}}
                 {{> _rowfooter }}
                 {{/each}}
             </div>
 
-            <div class="right-side__information">
-                <p class="footer-titles">Информация за клиента</p>
+            <div class="footer-content__information">
+                <h2 class="footer-titles">Информация за клиента</h2>
                 <hr class="about-section__line">
                 <div class="information__links">
                     <a class="link" href="#">Условия за ползване на сайта</a>
@@ -21,9 +23,9 @@
                 </div>
             </div>
 
-            <div class="right-side__bulletin">
+            <div class="footer-content__bulletin">
 
-                <p class="bulletin__title footer-titles">Абонирай се за бюлетин</p>
+                <h2 class="bulletin__title footer-titles">Абонирай се за бюлетин</h2>
                 <hr class="about-section__line">
                 <form action="/" class="bulletin-form">
 
@@ -48,10 +50,11 @@
         </div>
         <div class="footer__bottom container">
             <div class="bottom__left">
-                <p class="bottom__copyright">© 2023 - ЧЕЗ България</p>
+                <p class="bottom__copyright">&copy; 2023 - ЧЕЗ България</p>
             </div>
             <div class="bottom__right">
-                <p class="bottom__pytek">Дизайн и програмиране: <img src="../../assets/images/pytek.svg" alt="">
+                <p class="bottom__pytek">Дизайн и програмиране: <img src="../../assets/images/pytek.svg"
+                        alt="Pytek logo">
                 </p>
             </div>
         </div>
