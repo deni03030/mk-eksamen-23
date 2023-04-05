@@ -1,8 +1,9 @@
 .container-section {
-    padding-bottom: 380px;
+    padding-bottom: 350px;
 
     @include media-breakpoint-up(xl) {
         padding-bottom: 150px;
+        margin-bottom: 100px;
     }
 }
 

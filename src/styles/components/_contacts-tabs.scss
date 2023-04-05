@@ -79,6 +79,7 @@
 .tabcontent__titles {
     margin-bottom: 15px;
     font-size: $responsive-title-size;
+    font-weight: 700;
 
     @include media-breakpoint-up(md) {
         font-size: $theme-font-small-title;

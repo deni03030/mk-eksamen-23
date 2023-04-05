@@ -13,13 +13,8 @@
 
 .service-title {
     margin-bottom: 5px;
-    font-weight: 500;
-
-    @include media-breakpoint-down(sm) {
-        width: 260px;
-        font-size: $responsive-paragraph-size;
-        font-weight: 700;
-    }
+    font-weight: 700;
+    font-size: $responsive-paragraph-size;
 }
 
 .service-information {
@@ -27,7 +22,6 @@
     flex-direction: wrap;
 
     @include media-breakpoint-down(sm) {
-        display: flex;
         flex-direction: column;
     }
 }
@@ -91,7 +85,5 @@
 }
 
 .link-location {
-    @include media-breakpoint-down(sm) {
-        font-size: $responsive-paragraph-size;
-    }
+    border-bottom: 0.5px solid;
 }
