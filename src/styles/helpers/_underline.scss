@@ -1,0 +1,12 @@
+@mixin underline {
+    width: 20px;
+    margin-top: -10px;
+    margin-left: 1px;
+    border-top: 3px solid $theme-color-primary;
+
+    @include media-breakpoint-up(md) {
+        width: 40px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
