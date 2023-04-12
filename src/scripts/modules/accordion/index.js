@@ -1,15 +1,31 @@
-function openItem() {
-    const accButtons = document.querySelectorAll(".accordion__title");
-    const accContent = document.querySelectorAll(".accordion__content");
-    const accArrow = document.querySelectorAll(".accordion__title-arrow")
-    accButtons.forEach((accButton, index) => {
-        accButton.addEventListener("click", () => {
-            const content = accContent[index];
-            content.classList.toggle("visible");
-            const arrow = accArrow[index];
-            arrow.classList.toggle("visible");
-        });
-    });
-}
+import cs from '../utils/cs';
+import { cssClasses } from './helpers';
 
-export default openItem;
+class Accordion {
+    constructor(component) {
+        if (component) {
+            this.component = component;
+            this.accButtons = this.component.querySelectorAll(cs(cssClasses.buttons));
+            this.accContent = this.component.querySelectorAll(cs(cssClasses.contents));
+            this.accArrows = this.component.querySelectorAll(cs(cssClasses.arrows));
+
+            this.init();
+        }
+    }
+
+    openAccordionItem() {
+        this.accButtons.forEach((accButton, index) => {
+            accButton.addEventListener('click', () => {
+                const content = this.accContent[index];
+                content.classList.toggle('visible');
+                const arrow = this.accArrows[index];
+                arrow.classList.toggle('visible');
+            });
+        });
+    }
+
+    init() {
+        this.openAccordionItem();
+    }
+}
+export default Accordion;

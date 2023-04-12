@@ -21,6 +21,7 @@
     width: 100px;
     height: 60px;
     color: $tab-color-white;
+    cursor: pointer;
 
     &.active {
         color: $theme-color-secondary;

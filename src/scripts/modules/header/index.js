@@ -1,71 +1,79 @@
-function burgerButton() {
-    const menu = document.querySelector('#mobile__menu-list');
-    const buttonB = document.querySelector(".burger-button");
-    buttonB.addEventListener('click', function () {
-        const isMenuVisible = menu.classList.contains("visible");
-        menu.classList.toggle("visible", !isMenuVisible)
-        buttonB.classList.toggle("close-button", !isMenuVisible)
-    });
-}
+import cs from '../utils/cs';
+import { cssClasses } from './helpers';
 
-function showSearchInput() {
-    const searchButton = document.querySelector('.searching-button');
-    const searchInput = document.querySelector('.searching-input');
+class Header {
+    constructor(component) {
+        this.component = component;
+        this.firstLevel = this.component.querySelector(cs(cssClasses.levelOne));
+        this.secondLevel = this.component.querySelector(cs(cssClasses.levelTwo));
+        this.thirdLevel = this.component.querySelector(cs(cssClasses.levelThree));
 
-    searchButton.addEventListener('click', function () {
-        const isSearchInputVisible = searchInput.classList.contains("visible");
-        searchInput.classList.toggle("visible", !isSearchInputVisible);
-    });
-}
+        this.firstLevelItem = this.component.querySelectorAll(cs(cssClasses.levelOneItem));
+        this.secondLevelItem = this.component.querySelectorAll(cs(cssClasses.levelTwoItem));
 
-function nextLevel() {
-    const firstLevelLi = document.querySelectorAll('.first-level__menu-item');
+        this.burgerMenu = this.component.querySelector(cs(cssClasses.btnBurger));
+        this.btnSearch = this.component.querySelector(cs(cssClasses.buttonSearch));
+        this.searchInput = this.component.querySelector(cs(cssClasses.inputSearch));
 
-    firstLevelLi.forEach(function (li) {
-        const secondLevel = li.querySelector('.second-level');
-        const itemButton = li.querySelector('.mobile__item-button');
-        const secondLevelLi = li.querySelectorAll('.second-level__menu-item');
+        this.toLevelTwo = this.component.querySelector(cs(cssClasses.btnItem));
+        this.toLevelThree = this.component.querySelector(cs(cssClasses.btnToThird));
+        this.backToLevelTwo = this.component.querySelector(cs(cssClasses.backToSecond));
+        this.backToLevelOne = this.component.querySelector(cs(cssClasses.backToFirst));
 
-        if (secondLevel) {
-            itemButton.addEventListener('click', function () {
-                secondLevel.classList.add("visible");
-                secondLevelLi.forEach(function (secondLi) {
-                    const thirdLevel = secondLi.querySelector('.third-level')
-                    const btnToThird = secondLi.querySelector('.second-levele__button-third');
+        this.init();
+    }
 
-                    if (thirdLevel) {
-                        btnToThird.addEventListener('click', function () {
-                            li.classList.remove("visible");
-                            thirdLevel.classList.add("visible");
-                        });
-                    }
+    openBurgerMenu() {
+        this.burgerMenu.addEventListener('click', () => {
+            const isMenuVisible = this.firstLevel.classList.contains('visible');
+            this.firstLevel.classList.toggle('visible', !isMenuVisible);
+            this.burgerMenu.classList.toggle('close-button', !isMenuVisible);
+        });
+    }
+
+    openSearchInput() {
+        this.btnSearch.addEventListener('click', () => {
+            const isSearchInputVisible = this.searchInput.classList.contains('visible');
+            this.searchInput.classList.toggle('visible', !isSearchInputVisible);
+        });
+    }
+
+    goToNextLevel() {
+        this.firstLevelItem.forEach((li) => {
+            if (this.secondLevel) {
+                this.toLevelTwo.addEventListener('click', () => {
+                    this.secondLevel.classList.add('visible');
+                    this.secondLevelItem.forEach((toLevelThree) => {
+                        if (this.thirdLevel) {
+                            this.toLevelThree.addEventListener('click', () => {
+                                li.classList.remove('visible');
+                                this.thirdLevel.classList.add('visible');
+                            });
+                        }
+                    });
                 });
-            });
-        }
-    });
+            }
+        });
+    }
+
+    backToPreviousLevel() {
+        this.backToLevelTwo.addEventListener('click', () => {
+            this.thirdLevel.classList.remove('visible');
+            this.secondLevel.classList.add('visible');
+        });
+
+        this.backToLevelOne.addEventListener('click', () => {
+            this.secondLevel.classList.remove('visible');
+            this.firstLevel.classList.add('visible');
+        });
+    }
+
+    init() {
+        this.openBurgerMenu();
+        this.openSearchInput();
+        this.goToNextLevel();
+        this.backToPreviousLevel();
+    }
 }
 
-
-function goBack() {
-    const backToSecond = document.querySelector('.third-level__button');
-    const backToFirst = document.querySelector('.second-level__button');
-    const firstLevel = document.querySelector('#mobile__menu-list');
-    const secondLevel = document.querySelector('.second-level');
-    const thirdLevel = document.querySelector('.third-level');
-
-    backToSecond.addEventListener('click', function () {
-        thirdLevel.classList.remove("visible");
-        secondLevel.classList.add("visible");
-    });
-
-    backToFirst.addEventListener('click', function () {
-        secondLevel.classList.remove("visible");
-        firstLevel.classList.add("visible");
-    });
-};
-
-function handleMenu() {
-    nextLevel();
-    goBack();
-};
-export { burgerButton, showSearchInput, handleMenu };
+export default Header;
