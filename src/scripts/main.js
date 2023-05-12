@@ -5,6 +5,7 @@ import HomeSwiper from './modules/swiper-accent';
 import SlideChanger from './modules/video-gallery';
 import Accordion from './modules/accordion';
 import Header from './modules/header/index';
+import News from './modules/news-pagination';
 
 document.addEventListener('DOMContentLoaded', () => {
     const selector = document.querySelector('.header-mobile');
@@ -27,4 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const homeSwiperSelector = document.querySelector('.slider');
     const homeSwiper = new HomeSwiper(homeSwiperSelector);
+
+    News();
 });
