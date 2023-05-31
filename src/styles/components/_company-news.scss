@@ -85,3 +85,19 @@
     height: fit-content;
     gap: 30px;
 }
+
+.news-page-1 .news-item:nth-child(n+7),
+.news-page-2 .news-item:nth-child(-n+6),
+.news-page-3 .news-item:nth-child(n+13),
+.news-page-4 .news-item:nth-child(n+19) {
+    display: none;
+}
+
+.news-page-2 .news-item:nth-child(n+7),
+.news-page-3 .news-item:nth-child(-n+6),
+.news-page-4 .news-item:nth-child(n+7),
+.news-page-5 .news-item:nth-child(-n+6),
+.news-page-6 .news-item:nth-child(n+13),
+.news-page-7 .news-item:nth-child(-n+12) {
+    display: none;
+}

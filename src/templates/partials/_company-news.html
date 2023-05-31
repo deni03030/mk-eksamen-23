@@ -1,5 +1,50 @@
-<section class="company-news container company-news--grid">
-    {{#each company-news.news-cards}}
+<section id="news-cards" class="company-news container company-news--grid">
+    {{#each company-news.page-one.slice(0, 6) }}
+    <div class="news-item">
+        <a href="#" class="news-item__link">
+            <div class="link-wrapper">
+                <img src="{{image}}" alt="" class="news-item__image">
+                <time class="news-item__time"> {{date}} </time>
+            </div>
+            <div class="text-wrapper">
+                <h3 class="news-item__title"> {{title}} </h3>
+                <p class="news-item__text"> {{text}} </p>
+            </div>
+        </a>
+    </div>
+    {{/each}}
+
+    {{#each company-news.page-two.slice(0, 6)}}
+    <div class="news-item">
+        <a href="#" class="news-item__link">
+            <div class="link-wrapper">
+                <img src="{{image}}" alt="" class="news-item__image">
+                <time class="news-item__time"> {{date}} </time>
+            </div>
+            <div class="text-wrapper">
+                <h3 class="news-item__title"> {{title}} </h3>
+                <p class="news-item__text"> {{text}} </p>
+            </div>
+        </a>
+    </div>
+    {{/each}}
+
+    {{#each company-news.page-three.slice(0, 6)}}
+    <div class="news-item">
+        <a href="#" class="news-item__link">
+            <div class="link-wrapper">
+                <img src="{{image}}" alt="" class="news-item__image">
+                <time class="news-item__time"> {{date}} </time>
+            </div>
+            <div class="text-wrapper">
+                <h3 class="news-item__title"> {{title}} </h3>
+                <p class="news-item__text"> {{text}} </p>
+            </div>
+        </a>
+    </div>
+    {{/each}}
+
+    {{#each company-news.page-four.slice(0, 6)}}
     <div class="news-item">
         <a href="#" class="news-item__link">
             <div class="link-wrapper">
