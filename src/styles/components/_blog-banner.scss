@@ -1,0 +1,40 @@
+.blog-banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.blog-banner__background-color {
+    width: 100%;
+    height: 330px;
+    position: absolute;
+    background-color: $banner-color;
+
+    @include media-breakpoint-up(xl) {
+        width: 100%;
+        height: 380px;
+
+    }
+}
+
+.blog-banner__image-wrapper {
+    width: 343px;
+    height: 300px;
+    position: relative;
+
+    @include media-breakpoint-up(md) {
+        width: fit-content;
+        height: 550px;
+    }
+}
+
+.blog-banner__image {
+    width: 343px;
+    height: 300px;
+    object-fit: fill;
+
+    @include media-breakpoint-up(md) {
+        width: 100%;
+        height: 100%;
+    }
+}

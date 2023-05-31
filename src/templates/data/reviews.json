@@ -1,0 +1,28 @@
+{
+    "information" : [
+        {
+            "image": "../../assets/images/mk-anmeldelse-julie.jpg",
+            "title": "Julie Jensen",
+            "under-title": "Ejer af en nystartet detailvirksomhed",
+            "text": "Mirko Accounting har været en uvurderlig partner for vores virksomhed. Deres digitale tilgang har gjort det nemt og bekvemt at håndtere vores regnskab. Deres erfarne team har leveret præcise og effektive løsninger, der har frigivet vores tid til at fokusere på vækst."
+        },
+        {
+            "image": "../../assets/images/mk-anmeldelse-michael.jpg",
+            "title": "Michael Bundgaard",
+            "under-title": "Freelance konsulent",
+            "text": "Jeg har haft fornøjelsen af at samarbejde med Mirko Accounting til at løse mine regnskabsbehov som freelancer. De har været professionelle, pålidelige og hurtige til at svare på mine spørgsmål. Jeg føler mig tryg ved, at de tager sig af mine økonomiske forpligtelser."
+        },
+        {
+            "image": "../../assets/images/mk-anmeldelse-thomas.jpg",
+            "title": "Thomas Eriksen",
+            "under-title": "Medstifter af en tech-start-up",
+            "text": "Mirko Accounting har virkelig forstået vores branche og har leveret skræddersyet rådgivning til vores vækstfokuserede start-up. De har hjulpet os med at navigere gennem komplekse regnskabsmæssige spørgsmål og givet os uvurderlig vejledning for at sikre vores succes."
+        },
+        {
+            "image": "../../assets/images/mk-anmeldelse-maria.jpg",
+            "title": "Maria Andreassen",
+            "under-title": "Ejer af en konsulentvirksomhed",
+            "text": "Jeg er meget tilfreds med Mirko Accountings ekspertise inden for momsafregning og skatterådgivning. Deres team har hjulpet mig med at optimere min virksomheds økonomi og minimere skatterisici. Jeg kan varmt anbefale deres tjenester til andre virksomheder."
+        }
+    ]
+}

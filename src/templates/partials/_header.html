@@ -2,38 +2,25 @@
     <div class="navbar container">
         <div class="navbar__logo">
             <a href="index.html">
-                <img src="../../assets/images/imgpsh_fullsize_anim.png" class="logo" aria-label="ЧЕЗ лого" />
+                <img src="../../assets/images/mirko-accounting-logo.png" class="logo" aria-label="ЧЕЗ лого" />
             </a>
         </div>
         <nav class="menu" aria-label="navigation">
             <ul class="menu__first-level">
                 {{#each menu.content}}
-                <li class="menu__list-item dropdown ">
+                <li class="menu__list-item dropdown">
                     <a href=" {{link}} ">
                         {{title}}
                         {{#if secondLevel}}
-                        <img src="../../assets/images/arrow-nav.svg" class="first-level__link-arrow" alt="">
-                        <img src="../../assets/images/arrow-dropdown.svg" class="first-level__link-arrow--orange"
-                            alt="">
+                        <img src="../../assets/images/mk-nav-arrow-black.svg" class="first-level__link-arrow" alt="">
+                        <img src="../../assets/images/mk-nav-arrow.svg" class="first-level__link-arrow--blue" alt="">
                     </a>
                     <ul class="menu__second-level">
                         {{#each secondLevel}}
                         <li class="second-level__list-item second-level__dropdown">
-                            <a href="" class="link__third-level">
+                            <a href="{{link}}" class="link__third-level">
                                 {{title}}
-                                {{#if thirdLevel}}
-                                <img src="../../assets/images/arrow-nav.svg" class="link-arrow" alt="">
-                                <img src="../../assets/images/arrow-dropdown.svg" class="link-arrow--orange" alt="">
                             </a>
-
-                            <ul class="menu__third-level">
-                                {{#each thirdLevel}}
-                                <li class="third-level__list-item">
-                                    <a href="">{{title}}</a>
-                                </li>
-                                {{/each}}
-                            </ul>
-                            {{/if}}
                         </li>
                         {{/each}}
                     </ul>
@@ -52,13 +39,12 @@
                 </div>
                 <li class="menu-list_item dropdown ">
                     <a class="menu__list-item" href="">
-                        БГ
+                        DK
                         <img src="../../assets/images/arrow-nav.svg" class="first-level__link-arrow" alt="">
-                        <img src="../../assets/images/arrow-dropdown.svg" class="first-level__link-arrow--orange"
-                            alt="">
+                        <img src="../../assets/images/arrow-dropdown.svg" class="first-level__link-arrow--blue" alt="">
                     </a>
                     <ul class="menu__second-level">
-                        <li class="menu__list-item"><a href="#">АЕ</a></li>
+                        <li class="menu__list-item"><a href="#">UK</a></li>
                     </ul>
                 </li>
             </div>

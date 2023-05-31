@@ -1,19 +1,19 @@
 {
     "data": [
         {
-            "title": "„ЧЕЗ Разпределение Бълга­рия“ АД",
-            "number": "0700 10 010",
-            "email": "klienti@cez-rp.bg"
+            "title": "Miroslav Kovachev",
+            "number": "31 31 31 31",
+            "email": "miroslav@mkaccounting.dk"
         },
         {
-            "title": "„ЧЕЗ Електро Бълга­рия“ АД",
-            "number": "0700 10 010",
-            "email": "klienti@cezelectro.bg"
+            "title": "Denitsa Deshkova",
+            "number": "32 32 32 32",
+            "email": "denitsa@mcaccounting.dk"
         },
         {
-            "title": "Центрове за обслужване на клиенти",
-            "text": "Намери център близо до теб",
-            "link": "https://www.google.com/maps"
+            "title": "Åbningstider:",
+            "hverdagen": "Hverdage:  17.00 - 19.00",
+            "weekend": "Weekend: Lukket"
         }
     ]
 }

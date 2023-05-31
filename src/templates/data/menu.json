@@ -1,59 +1,29 @@
 {
     "content": [
         {
-            "title": "За нас",
-            "link": "about-us.html",
+            "title": "Ydelser",
+            "link": "ydelser.html"
+        },
+        {
+            "title": "Blog",
+            "link": "blog.html",
             "secondLevel": [
                 {
-                    "title": "Иновации",
-                    "link": "#"
+                    "title": "Ofte stillede spørgsmål",
+                    "link": "blog.html"
                 },
                 {
-                    "title": "Мисия и визия",
-                    "link": "#"
-                },
-                {
-                    "title": "История",
-                    "link": "#"
-                },
-                {
-                    "title": "Корпоративна структура",
-                    "link": "#",
-                    "thirdLevel": [
-                        {
-                            "title": "Мениджмънт",
-                            "link": "#"
-                        },
-                        {
-                            "title": "Инвеститори и сътрудници",
-                            "link": "#"
-                        }
-                    ]
-                },
-                {
-                    "title": "Ръководство",
-                    "link": "#"
+                    "title": "Nyheder",
+                    "link": "blog.html"
                 }
             ]
         },
         {
-            "title": "Дружества",
-            "link": "#"
+            "title": "Om os",
+            "link": "about-us.html"
         },
         {
-            "title": "Новини",
-            "link": "news.html"
-        },
-        {
-            "title": "Социална отговрност",
-            "link": "#"
-        },
-        {
-            "title": "Кариери",
-            "link": "#"
-        },
-        {
-            "title": "Контакти",
+            "title": "Kontakt os",
             "link": "contacts.html"
         }
     ]

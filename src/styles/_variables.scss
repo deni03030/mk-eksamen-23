@@ -1,5 +1,5 @@
 // colors
-$theme-color-primary: #f3581e;
+$theme-color-primary: #3A7BE4;
 $theme-color-secondary: #ffff;
 $tab-color-white: #ffffffab;
 $link-color-black: rgb(0, 0, 0);
@@ -8,8 +8,10 @@ $placeholder-color: #d6d6d6d6;
 $footer-color-grey: #e3e3e3;
 $burger-menu-color: #393939;
 $mobile-header-arrow: #aeaeae;
-$swiper-numbers-color: #606060;
 $news-date-color: #878787;
+$theme-color-third: #4ec99a;
+$banner-color: #184389;
+$border-width: 13px;
 
 // fonts
 $font-opensans-regular: "OpenSans-Regular";
@@ -43,6 +45,7 @@ $font-robotocondensed-regular: "RobotoCondensed-Regular";
 // font-size
 $news-date-size: 13px;
 $theme-font-base: 16px;
+$mk-costumer-reviews-size: 14px;
 $theme-font-title: 40px;
 $tab-menu-font: 30px;
 $line-height: 24px;
@@ -51,17 +54,16 @@ $theme-font-small-title: 20px;
 $career-font-numbers: 50px;
 $swiper-numbers-size: 80px;
 $swiper-numbers-responsive: 39px;
-
+$team-name-font-size: 20px;
 //Responsive font-size
+$responsive-news-date-size: 10px;
 $responsive-title-size: 18px;
+$responsive-text-size: 12px;
 $responsive-paragraph-size: 15px;
 $responsive-big-title-size: 24px;
 $responsive-numbers-size: 30px;
 
 //Background styles
-$background-image: url('../../assets/images/arrow-small.svg');
-$background-image-hover: url('../../assets/images/arrow-small-orange.svg');
-$career-background: linear-gradient(to top, #393939, rgba(122, 122, 122, 0.29));
 $mobile-menu-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.109);
 $background-color: none;
 $background-no-repeat: no-repeat;
@@ -71,6 +73,8 @@ $background-position-x: 85%;
 $background-transparent: transparent;
 $transform-background-image: translateY(-50%);
 $swiper-style: unset;
+$border-radius: 50%;
+$image-border-radius: 50%;
 
 //box-styles
 $box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
@@ -100,7 +104,7 @@ $menu-background-position-x: 100%;
 //tab
 $tab-border-right: solid 10px #f5f5f5;
 $tab-border-left: solid 10px #f5f5f5;
-$tab-border-top: solid 10px #f3581e;
+
 
 //line-hight
 

@@ -1,0 +1,21 @@
+.news-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20;
+    align-items: center;
+
+    @include media-breakpoint-up(xl) {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+.cpm-news-cards {
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+    @include media-breakpoint-up(xl) {
+        margin-bottom: 0;
+    }
+}

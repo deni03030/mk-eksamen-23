@@ -6,41 +6,20 @@
     margin-bottom: 160px;
     justify-content: center;
 
-    &__left {
+    &__background {
         position: absolute;
         top: 0;
+        width: 100%;
+        height: 100%;
+        right: 0;
+        background-color: $theme-color-primary;
+        z-index: -1;
 
-        &--orange {
-            width: 75%;
-            height: 75%;
-            margin-right: auto;
-            left: 0;
-            z-index: 0;
-            background-color: $theme-color-primary;
 
-            @include media-breakpoint-up(md) {
-                width: 62%;
-                height: 100%;
-            }
-
-            @include media-breakpoint-up(xl) {
-                width: 55%;
-            }
-        }
-
-        &--grey {
-            width: 100%;
-            height: 100%;
+        @include media-breakpoint-up(md) {
+            padding-bottom: 0;
             right: 0;
-            background-color: $section-color-grey;
-            z-index: -1;
-
-
-            @include media-breakpoint-up(md) {
-                padding-bottom: 0;
-                right: 0;
-                box-sizing: border-box;
-            }
+            box-sizing: border-box;
         }
     }
 }
@@ -72,7 +51,7 @@
     z-index: 1;
 
     @include media-breakpoint-up(md) {
-        width: 90%;
+        width: 100%;
     }
 }
 
@@ -139,9 +118,7 @@
     font-family: $font-robotocondensed-bold;
     background-color: $transperant-background;
     color: $theme-color-secondary;
-    -webkit-text-stroke-color: $swiper-numbers-color;
-    -webkit-text-stroke-width: 1px;
-    opacity: 0.9;
+    opacity: 1;
     transition: opacity 1s ease-in-out;
 
     @include media-breakpoint-up(md) {
@@ -156,8 +133,8 @@
 }
 
 .swiper-pagination-bullet-active {
-    color: $theme-color-primary;
-    -webkit-text-stroke-color: $theme-color-primary;
+    color: $theme-color-third;
+    -webkit-text-stroke-color: $theme-color-third;
     opacity: 1;
     transition: opacity 1s ease-in-out;
 }
@@ -171,7 +148,7 @@
     position: absolute;
     content: "";
     transition: opacity 1s ease-in-out;
-    background-color: $theme-color-primary;
+    background-color: $theme-color-third;
 
     @include media-breakpoint-up(md) {
         top: 0;
@@ -202,6 +179,7 @@
     opacity: 0;
     transition: opacity 0.3s linear;
     z-index: 2;
+    pointer-events: none;
 
     @include media-breakpoint-up(sm) {
         width: 520px;
@@ -268,4 +246,5 @@
 .active {
     opacity: 1;
     transition: opacity 0.3s linear;
+    pointer-events: all;
 }

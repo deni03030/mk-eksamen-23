@@ -1,33 +1,50 @@
-.cards-side__card {
-    flex: 0 0 300px;
+.cards-template {
     width: 300px;
-    margin-bottom: 20px;
-    padding: 30px;
-    background-color: $theme-color-secondary;
+    height: 250px;
     box-shadow: $box-shadow;
     text-align: start;
+    border: 5px solid $theme-color-primary;
+    padding: 20px 10px;
 
     @include media-breakpoint-up(md) {
-        flex: none;
         width: 400px;
         height: 400px;
-        padding: 50px;
+        margin-bottom: 40px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+        border: 10px solid $theme-color-primary;
     }
 }
 
 .card__image {
-    height: 72px;
+    height: 40px;
 
-    @include media-breakpoint-down(sm) {
-        height: 60px;
+    @include media-breakpoint-up(xl) {
+        height: 80px;
+    }
+}
+
+.title-image__wrapper {
+    height: 50px;
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+
+    @include media-breakpoint-up(xl) {
+        height: 120px;
     }
 }
 
 .card__title {
     margin-top: 15px;
-    font-size: $theme-font-small-title;
+    margin-left: 5px;
+    font-size: $tab-menu-font;
     font-weight: 700;
     font-family: $font-robotocondensed-bold;
+    color: $theme-color-primary;
+
 
     @include media-breakpoint-down(md) {
         font-size: $responsive-title-size;
@@ -35,58 +52,13 @@
 }
 
 .card__text {
+    width: 200px;
     margin-top: 15px;
-    line-height: $line-height;
-    text-align: left;
-    font-size: $theme-font-base;
-
-    @include media-breakpoint-down(md) {
-        font-size: $responsive-paragraph-size;
-        margin-top: 5px;
-        height: 95px;
-        white-space: wrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-}
-
-.card__information-btn {
-    display: block;
-    width: 70%;
-    margin-left: -5px;
-    border: $none-border;
-    background-image: $background-image;
-    background-size: $background-size;
-    background-color: $theme-color-secondary;
-    background-repeat: $background-no-repeat;
-    background-position-x: $background-position-x;
     text-align: start;
-    font-weight: 700;
+    font-size: $responsive-text-size;
 
-    @include media-breakpoint-down(sm) {
-        width: 75%;
-        font-size: $responsive-paragraph-size;
+    @include media-breakpoint-up(xl) {
+        width: auto;
+        font-size: $theme-font-base;
     }
-}
-
-.card__information-btn:hover {
-    background-image: $background-image-hover;
-    background-size: $background-size;
-    background-repeat: $background-no-repeat;
-}
-
-.card__information-btn:active {
-    color: $theme-color-primary;
-    background-image: $background-image-hover;
-    background-repeat: $background-no-repeat;
-}
-
-.about-section__text {
-
-    @include media-breakpoint-down(sm) {
-        height: 60px;
-        width: 270px;
-        margin-bottom: 40px;
-    }
-
 }

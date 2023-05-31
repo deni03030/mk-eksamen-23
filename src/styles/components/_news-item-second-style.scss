@@ -1,0 +1,83 @@
+.news-item-second {
+    width: 300px;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    background-color: $section-color-grey;
+    border: 5px solid $theme-color-primary;
+
+    &__image {
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        object-fit: cover;
+
+        &:hover {
+            transform: scale(1.05);
+            transition: 0.6s ease;
+        }
+    }
+
+    &__time {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 5px 15px;
+        font-size: $responsive-news-date-size;
+        color: $news-date-color;
+        background-color: $theme-color-secondary;
+        z-index: 2;
+
+        @include media-breakpoint-up(xl) {
+            font-size: $news-date-size;
+        }
+    }
+
+    &__title {
+        font-family: $font-robotocondensed-bold;
+        font-size: $responsive-title-size;
+        font-weight: 700;
+        text-align: start;
+        padding-left: 20px;
+
+        @include media-breakpoint-up(xl) {
+            font-size: $h2-font;
+        }
+    }
+
+    &__text {
+        text-align: start;
+        padding: 20px;
+        font-family: $font-opensans-regular;
+        color: $news-date-color;
+        font-size: $responsive-text-size;
+
+        @include media-breakpoint-up(xl) {
+            font-size: $theme-font-base;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        width: 400px;
+        height: 512px;
+    }
+}
+
+.second-image-date--wrapper {
+    height: 200px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.second-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+}

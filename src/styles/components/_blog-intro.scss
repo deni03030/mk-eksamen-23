@@ -1,0 +1,30 @@
+.intro-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.intro-title {
+    text-align: start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: $h2-font;
+    font-weight: 700;
+    font-family: $font-robotocondensed-bold;
+
+    @include media-breakpoint-up(xl) {
+        font-size: $theme-font-title;
+    }
+}
+
+.intro-text {
+    text-align: start;
+    width: 300px;
+    font-size: $responsive-paragraph-size;
+
+    @include media-breakpoint-up(xl) {
+        width: 700px;
+        font-size: $responsive-title-size;
+    }
+}

@@ -1,43 +1,54 @@
-<section class="container form-accent">
-    <div class="form-accent__left-side">
+<section class="container contact-form">
+    <div class="contact-form__left-side">
         <h2 class="left-side__title">
-            Свържи се с нас
+            Kontakt os
         </h2>
         <hr class="article-title__underline" />
         <div class="left-side__text-box">
-            <span class="text-box">
-                ЧЕЗ в България и „Надежда и домове за децата – клон България“ стартират „Заедно можем всичко“ – кампания
-                за подпомагане на уязвими деца и семейства за преодоляване на негативните последствия на пандемията от
-                коронавирус и прилагането на мерки за ограничаването й.
-            </span>
+            <div class="kontakt-number mk-kontakt-wrapper">
+                <div class="icon-wrapper">
+                    <img src="../../assets/images/mk-phone-icon.png" class="mobile-icon mk-icons" alt="">
+                </div>
+                <p> 30 30 30 30 </p>
+            </div>
+            <div class="kontakt-email  mk-kontakt-wrapper">
+                <div class="icon-wrapper">
+                    <img src="../../assets/images/mk-mail-icon.png" class="mail-icon mk-icons" alt="">
+                </div>
+                <p> info@mirkoaccounting.dk</p>
+            </div>
+            <div class="kontakt-adrasse  mk-kontakt-wrapper">
+                <div class="icon-wrapper">
+                    <img src="../../assets/images/mk-location-icon.png" class="location-icon" alt="">
+                </div>
+                <p> Bymuren 84, 3tv., 2650 Hvidovre</p>
+            </div>
 
         </div>
     </div>
-
     <div class="form-accent__right-side">
-        <div class="right-side__form--orange"></div>
-        <div class="right-side__form--grey">
+        <div class="right-side__form">
             <form action="" class="submit-form">
-                <select name="" class="form-content office-option">
-                    <option value="" disabled selected>До офис или дружество</option>
-                    <option value="">ЧЕЗ 1</option>
-                    <option value="">ЧЕЗ 2</option>
-                    <option value="">ЧЕЗ 3</option>
+                <select name="" class="form-content person-option">
+                    <option value="" disabled selected>Hvem vil du have samtale med ?</option>
+                    <option value="">Miroslav Kovachev - Regnskabschef</option>
+                    <option value="">Miroslava Kovacheva -Administrativ medarbejder</option>
+                    <option value="">Denita Deshkova - Regnskabsassistent</option>
                 </select>
                 <div class="name-container">
-                    <input class="form-content name" type="text" placeholder="Име">
-                    <input class="form-content lastname" type="text" placeholder="Фамилия">
+                    <input class="form-content name" type="text" placeholder="Navn">
+                    <input class="form-content lastname" type="text" placeholder="Efternavn">
                 </div>
 
-                <input class="form-content email" type="text" placeholder="Имейл">
-                <input class="form-content message" type="text" placeholder="Тема на съобщението">
+                <input class="form-content email" type="text" placeholder="E-mail">
+                <input class="form-content message" type="text" placeholder="Hvad drejer det sig om?">
 
                 <textarea class="form-content textarea" name="" id=""></textarea>
                 <label for="" class="radio-button-container ">
                     <input type="checkbox" class="bulletin__checkbox-style form-checkbox">
-                    <p class="form__checkbox-text">Съгласен съм личните ми данни да бъдат обработвани.</p>
+                    <p class="form__checkbox-text">Jeg accepterer, at mine personoplysninger behandles.</p>
                 </label>
-                <button class="left-side_more-btn unstyled-button">Изпрати</button>
+                <button class="unstyled-button contact-form__btn">SEND</button>
             </form>
         </div>
 

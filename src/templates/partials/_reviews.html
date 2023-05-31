@@ -1,0 +1,22 @@
+<div class="reviews-container">
+    <div class="container">
+        <div class="title-container">
+            <h2 class="reviews-title">KUNDEANMELDELSER</h2>
+            <hr class="article-title__underline">
+        </div>
+        <div class="all-reviews">
+            {{#each reviews.information}}
+            <div class="costumer-review costumer-review-padding">
+                <img src="{{image}}" alt="" class="costumer-image">
+                <h3 class="costumer-name">{{title}}</h3>
+                <p class="costumer-undername">{{under-title}}</p>
+                <div class="stars-wrapper">
+                    <img src="../../assets/images/mk-five-stars-reviews.png" alt="fem ud af fem stjerner"
+                        class="stars-review">
+                </div>
+                <p class="review-text">"{{text}}"</p>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

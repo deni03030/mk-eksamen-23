@@ -3,37 +3,8 @@
     height: fit-content;
     display: flex;
     flex-direction: column;
-    margin-bottom: 100px;
-
-
-    &__background {
-        position: absolute;
-
-        &--orange {
-            width: 80%;
-            height: 100%;
-            right: 0;
-            bottom: -50px;
-            background-color: $theme-color-primary;
-            z-index: -2;
-        }
-
-        &--grey {
-            width: 95%;
-            height: 100%;
-            left: 0;
-            background-color: $section-color-grey;
-            z-index: -1;
-
-            @include media-breakpoint-up(md) {
-                width: 85%;
-            }
-
-            @include media-breakpoint-up(xl) {
-                width: 85%;
-            }
-        }
-    }
+    align-items: center;
+    background-color: $theme-color-primary;
 
     &__title {
         display: flex;
@@ -48,6 +19,19 @@
             font-size: $theme-font-small-title;
         }
 
+    }
+
+    &__cpm-title {
+        margin-top: 20px;
+        text-align: center;
+        font-size: $h2-font;
+        color: $theme-color-secondary;
+        font-weight: 700;
+        font-family: $font-robotocondensed-bold;
+
+        @include media-breakpoint-up(xl) {
+            font-size: $theme-font-title;
+        }
     }
 }
 
@@ -96,7 +80,7 @@
     }
 
     @include media-breakpoint-up(xl) {
-        width: 85%;
+        width: 70%;
     }
 }
 
@@ -115,7 +99,7 @@
 }
 
 .accordion__wrapper-container {
-    align-items: start;
+    align-items: center;
     display: flex;
     flex-direction: column;
     height: fit-content;

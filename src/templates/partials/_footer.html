@@ -1,60 +1,68 @@
 <footer class="footer">
-    <h1 class="screen-reader-only">Футър</h1>
+    <h1 class="screen-reader-only">Footer</h1>
 
     <div class="footer__left-side"></div>
 
     <div class="footer__right-side">
         <div class="container footer-content footer-content--grid">
             <div class="footer-content__service">
-                <h2 class="footer-titles">Обслужване на клиенти</h2>
+                <h2 class="footer-titles">Kunde service</h2>
                 {{#each services.data}}
                 {{> _rowfooter }}
                 {{/each}}
             </div>
 
             <div class="footer-content__information">
-                <h2 class="footer-titles">Информация за клиента</h2>
-                <hr class="about-section__line">
+                <h2 class="footer-titles">Brugbare links:</h2>
+                <hr class="footer__underlines">
                 <div class="information__links">
-                    <a class="link" href="#">Условия за ползване на сайта</a>
-                    <a class="link" href="#">Защита на личните данни</a>
-                    <a class="link" href="#">Настройки за бисквитки</a>
-                    <a class="link" href="#">Карта на сайта</a>
+                    <a class="link" href="https://skat.dk/">
+                        <h3 class="link-title">Skat</h3>Indberetning af moms, ansatte, osv.
+                    </a>
+                    <a class="link" href="https://virk.dk/">
+                        <h3 class="link-title">Virk</h3>Officielle virksomhedsregister
+                    </a>
+                    <a class="link" href="https://www.danlon.dk/">
+                        <h3 class="link-title">Danløn</h3>Internetbaseret lønprogram
+                    </a>
+                    <a class="link" href="https://www.e-conomic.dk/">
+                        <h3 class="link-title">Visma E-conomic</h3> Internetbaseret regnskabsprogram
+                    </a>
                 </div>
             </div>
 
             <div class="footer-content__bulletin">
 
-                <h2 class="bulletin__title footer-titles">Абонирай се за бюлетин</h2>
-                <hr class="about-section__line">
+                <h2 class="bulletin__title footer-titles">Tilmeld dig til vores nyheder</h2>
+                <hr class="footer__underlines">
                 <form action="/" class="bulletin-form">
+                    <div class="labels-wrapper">
+                        <label class="bulletin__checkbox private-costumers" for="private"> <input type="checkbox"
+                                id="private" name="private" value="private-costumers" class="checkbox" />
+                            Erhvervskunde
+                        </label>
 
-                    <label class="bulletin__checkbox private-costumers" for="private"> <input type="checkbox"
-                            id="private" name="private" value="private-costumers" class="checkbox" />
-                        Битов клиент
-                    </label>
 
-
-                    <label class="bulletin__checkbox private-costumers" for="business"><input type="checkbox"
-                            name="checkbox" id="business" value="business-costumers" class="checkbox" />
-                        Бизнес клиент
-                    </label>
+                        <label class="bulletin__checkbox private-costumers" for="business"><input type="checkbox"
+                                name="checkbox" id="business" value="business-costumers" class="checkbox" />
+                            Privatkunde
+                        </label>
+                    </div>
 
                     <div class="bulletin__subscribe">
                         <input type="text" name="e-mail" id="subscribe_email" class="subscribe_email bulletin__email"
-                            placeholder="Имейл">
-                        <button class="bulletin__submit">Абонирай се</button>
+                            placeholder="E-mail">
+                        <button class="bulletin__submit">Tilmelde dig</button>
                     </div>
                 </form>
             </div>
         </div>
         <div class="footer__bottom container">
             <div class="bottom__left">
-                <p class="bottom__copyright">&copy; 2023 - ЧЕЗ България</p>
+                <p class="bottom__copyright">&copy; 2023 - Mirko Accounting ApS</p>
             </div>
             <div class="bottom__right">
-                <p class="bottom__pytek">Дизайн и програмиране: <img src="../../assets/images/pytek.svg"
-                        alt="Pytek logo">
+                <p class="bottom__pytek">Design og programmering: Denitsa Deshkova
                 </p>
             </div>
         </div>

@@ -3,20 +3,28 @@
         {
             "dataSlide": 1,
             "class": "active",
-            "title": "Динамично, енергитично и вдъхновяващо",
-            "text": " Дейността на всички дружества от Групата в страната се управлява и координира от „ЧЕЗ България” ЕАД. Компанията обслужва 2.2 милиона клиенти и притежава електроразпределителна мрежа с обща дължина над 57 000 км. "
+            "title": "Leder du efter en pålidelig bogholder?",
+            "text": "Hos os finder du specialister inden for finansiel, kunde- og leverandørbogføring. Vi er dedikerede til at sikre, at dine økonomiske opgaver bliver håndteret professionelt og effektivt. Tryk på kanppen og mød vores team.",
+            "btn-text": "Læs mere",
+            "btn-link": "about-us.html"
         },
         {"dataSlide": 2,
-            "title": "ЕСКО България е новото име на компанията на ЧЕЗ за ЕСКО услуги",
-            "text": "Дружеството вече е собственост на Синтетика АД."
+            "title": "Hvordan kan vi hjælpe dig og din virksomhed?",
+            "text": "Vores kerneområder er bogføring, årsregnskab og momsafregning. Vi tilbyder også skatterådgivning, økonomiske analyser og virksomhedsrådgivning. Tryk på kanppen og se alle vores ydelser.",
+            "btn-text": "Læs mere",
+           "btn-link": "ydelser.html"
         },
         {"dataSlide": 3,
-            "title": "Електрохолд отвори търговски център с нова визия в София",
-            "text": "Офиcът paбoти с клиенти вceĸи дeлничeн дeн oт 8.30 ч. дo 17:00 ч. В него се предлага пълната гама услуги на Електрохолд Продажби и ЕРМ Запад."
+            "title": "Er du ny virksomhedsejer med vigtige spørgsmål, der mangler svar?",
+            "text": "Her har vi samlet svar på nogle af de mest stillede spørgsmål, vi modtager. Tryk på knappen og se om du også kan finde det, du leder efter.",
+            "btn-text": "Læs mere",
+           "btn-link": "blog.html"
         },
         {"dataSlide": 4,
-            "title": "Проверка за наличие на капацитет за ВЕИ производители",
-            "text": "Изберете търсената област, община и населено място, за да проверите наличието или липсата на свободен капацитет на ЕРМ Запад за ВЕИ производители."
+            "title": " Er vi din nye virksomhedspartner?",
+            "text": "Kontakt os i dag for at få information om dine muligheder og hvordan vi kan hjælpe dig. Vi er her for dig!",
+            "btn-text": "Kontakt os",
+           "btn-link": "contacts.html"
         }
     ]
 }

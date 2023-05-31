@@ -1,0 +1,47 @@
+.about-us-banner {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+
+    @include media-breakpoint-up(xl) {
+        margin-bottom: 50px;
+        margin-top: -50px;
+    }
+}
+
+.about-us-banner__background-color {
+    width: 100%;
+    height: 330px;
+    position: absolute;
+    background-color: $theme-color-primary;
+
+    @include media-breakpoint-up(xl) {
+        width: 100%;
+        height: 380px;
+
+    }
+}
+
+.about-us-banner__image-wrapper {
+    width: fit-content;
+    height: 300px;
+    position: relative;
+
+    @include media-breakpoint-up(md) {
+        height: 550px;
+    }
+}
+
+.about-us-banner__image {
+    width: 340px;
+    height: 300px;
+    object-fit: fill;
+
+    @include media-breakpoint-up(md) {
+        width: 650px;
+        height: 500px;
+        margin-top: 20px;
+    }
+}

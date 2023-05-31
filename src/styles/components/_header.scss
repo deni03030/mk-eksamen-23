@@ -5,7 +5,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 50px;
     }
 }
 
@@ -20,7 +19,7 @@
 .logo {
 
     @include media-breakpoint-down(xl) {
-        width: 150px;
+        width: 250px;
     }
 }
 
@@ -82,92 +81,6 @@
     }
 }
 
-.menu__second-level:hover .link-arrow--orange {
-
-    @include media-breakpoint-down(xl) {
-        display: none;
-    }
-}
-
-.dropdown:hover .link-arrow--orange {
-
-    @include media-breakpoint-down(xl) {
-        display: none;
-    }
-}
-
-.second-level__dropdown:hover .link-arrow--orange {
-    display: none;
-
-    @include media-breakpoint-down(xl) {
-        display: block;
-        width: 10px;
-    }
-}
-
-.second-level__dropdown:hover .link-arrow {
-
-    @include media-breakpoint-down(xl) {
-        display: none;
-    }
-}
-
-.menu__third-level {
-
-    @include media-breakpoint-down(xl) {
-        display: none;
-        position: absolute;
-        left: 250px;
-        top: 72px;
-        width: 250px;
-        padding: 10px;
-        background-color: $section-color-grey;
-        box-shadow: $box-shadow;
-        z-index: 1;
-        text-transform: none;
-    }
-}
-
-.second-level__dropdown:hover .menu__third-level {
-    display: none;
-
-    @include media-breakpoint-down(xl) {
-        display: block;
-    }
-}
-
-.menu__third-level:hover .link-arrow--orange {
-
-    @include media-breakpoint-down(xl) {
-        display: block;
-    }
-}
-
-.link__third-level {
-
-    @include media-breakpoint-down(xl) {
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-.link-arrow {
-
-
-    @include media-breakpoint-down(xl) {
-        rotate: -90deg;
-    }
-}
-
-.link-arrow--orange {
-
-
-    @include media-breakpoint-down(xl) {
-        rotate: 90deg;
-    }
-}
-
-
 /* Icons STYLE */
 .navbar__searching-and-lanugages {
     display: flex;
@@ -200,11 +113,15 @@
     }
 }
 
-.first-level__link-arrow--orange {
+.first-level__link-arrow {
+    width: 10px;
+}
+
+.first-level__link-arrow--blue {
     display: none;
 }
 
-.menu__first-level:hover .first-level__link-arrow--orange {
+.menu__first-level:hover .first-level__link-arrow--blue {
     @include media-breakpoint-down(xl) {
         display: block;
         float: right;

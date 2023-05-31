@@ -4,7 +4,7 @@
         <div class="service-information">
             {{#if number}}
             <div class="information-number">
-                <img src="../../assets/images/phone-call.svg" class="image" alt="">
+                <img src="../../assets/images/mk-phone-icon.png" class="image" alt="mobile-icon">
                 <p> {{number}} </p>
             </div>
             {{/if}}
@@ -12,15 +12,15 @@
             {{#if email}}
             <span class="information-divider"></span>
             <div class="information-email">
-                <img src="../../assets/images/Mail_footer.svg" class="image" alt="">
+                <img src="../../assets/images/mk-mail-icon.png" class="image" alt="mail-icon">
                 <p> {{email}} </p>
             </div>
             {{/if}}
 
-            {{#if link}}
+            {{#if hverdagen}}
             <div class="information-link">
-                <img src="../../assets/images/location.svg" alt="" class="location-image">
-                <a href={{link}} class="link-location"> {{text}} </a>
+                <p class="working-hours-everyday">{{hverdagen}}</p>
+                <p class="working-hours--weekend">{{weekend}}</p>
             </div>
             {{/if}}
 

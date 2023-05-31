@@ -1,0 +1,16 @@
+<div class="swiper gallery">
+    <div class="swiper-wrapper gallery-wrapper">
+        {{#each company-news.page-one}}
+        <div class="swiper-slide gallery-slide">
+            {{> _news-item}}
+        </div>
+        {{/each}}
+
+    </div>
+    <div class="swiper-button-prev gallery-button-prev">
+        <img src="../../assets/images/arrow-slide.svg" alt="">
+    </div>
+    <div class="swiper-button-next gallery-button-next">
+        <img src="../../assets/images/arrow-slide.svg" alt="">
+    </div>
+</div>

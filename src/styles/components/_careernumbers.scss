@@ -3,10 +3,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-
-    @include media-breakpoint-up(xl) {
-        width: 250px;
-    }
+    align-items: center;
 
 }
 
@@ -15,26 +12,16 @@
     width: fit-content;
 }
 
-.numbers-border {
-    display: none;
-
-    @include media-breakpoint-up(xl) {
-        display: block;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        border-right: 2px solid $footer-color-grey;
-
-        &:last-child {
-            border-right: $none-border;
-        }
-
-    }
-}
-
 .numbers-counter {
-    font-size: $career-font-numbers;
+    font-size: $swiper-numbers-size;
     font-weight: 700;
-    color: $theme-color-primary;
+    color: $theme-color-secondary;
+    font-family: $font-robotocondensed-bold;
+    background-color: $transperant-background;
+    -webkit-text-stroke-color: $theme-color-secondary;
+    -webkit-text-stroke-width: 1px;
+    opacity: 0.9;
+    transition: opacity 1s ease-in-out;
 
     @include media-breakpoint-down(md) {
         font-size: $responsive-numbers-size;
@@ -49,6 +36,6 @@
 .numbers-text {
     font-size: $theme-font-base;
     font-weight: normal;
-    color: $link-color-black;
+    color: $theme-color-secondary;
 
 }

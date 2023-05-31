@@ -6,7 +6,6 @@ class Header {
         this.component = component;
         this.firstLevel = this.component.querySelector(cs(cssClasses.levelOne));
         this.secondLevel = this.component.querySelector(cs(cssClasses.levelTwo));
-        this.thirdLevel = this.component.querySelector(cs(cssClasses.levelThree));
 
         this.firstLevelItem = this.component.querySelectorAll(cs(cssClasses.levelOneItem));
         this.secondLevelItem = this.component.querySelectorAll(cs(cssClasses.levelTwoItem));
@@ -16,8 +15,6 @@ class Header {
         this.searchInput = this.component.querySelector(cs(cssClasses.inputSearch));
 
         this.toLevelTwo = this.component.querySelector(cs(cssClasses.btnItem));
-        this.toLevelThree = this.component.querySelector(cs(cssClasses.btnToThird));
-        this.backToLevelTwo = this.component.querySelector(cs(cssClasses.backToSecond));
         this.backToLevelOne = this.component.querySelector(cs(cssClasses.backToFirst));
 
         this.init();
@@ -57,11 +54,6 @@ class Header {
     }
 
     backToPreviousLevel() {
-        this.backToLevelTwo.addEventListener('click', () => {
-            this.thirdLevel.classList.remove('visible');
-            this.secondLevel.classList.add('visible');
-        });
-
         this.backToLevelOne.addEventListener('click', () => {
             this.secondLevel.classList.remove('visible');
             this.firstLevel.classList.add('visible');
